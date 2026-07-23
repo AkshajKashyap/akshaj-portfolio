@@ -20,6 +20,10 @@ export const metadata: Metadata = {
     template: "%s | Akshaj Kashyap",
   },
   description: "Akshaj Kashyap is a UCSB computer science student building applied machine-learning and software systems.",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

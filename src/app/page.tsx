@@ -1,6 +1,5 @@
 import { ButtonLink } from "@/components/button-link";
 import { ProjectCard } from "@/components/project-card";
-import { ProjectCardSkeleton } from "@/components/project-card-skeleton";
 import { Section } from "@/components/section";
 import { SectionHeading } from "@/components/section-heading";
 import { projects } from "@/data/projects";
@@ -29,9 +28,7 @@ export default function Home() {
       <Section>
         <SectionHeading eyebrow="Selected work" title="Featured projects" description="Four systems spanning causal inference, graph learning, language-model workflows, and computer vision." />
         <div className="mt-8 grid gap-6">
-          {featuredProjects.length > 0
-            ? featuredProjects.map((project) => <ProjectCard key={project.slug} project={project} featured />)
-            : Array.from({ length: 4 }, (_, index) => <ProjectCardSkeleton key={index} index={index + 1} featured />)}
+          {featuredProjects.map((project) => <ProjectCard key={project.slug} project={project} featured />)}
         </div>
       </Section>
 
@@ -41,9 +38,7 @@ export default function Home() {
           <ButtonLink href="/projects" variant="secondary">View all projects</ButtonLink>
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {additionalProjects.length > 0
-            ? additionalProjects.map((project) => <ProjectCard key={project.slug} project={project} />)
-            : Array.from({ length: 3 }, (_, index) => <ProjectCardSkeleton key={index} index={index + 1} />)}
+          {additionalProjects.map((project) => <ProjectCard key={project.slug} project={project} />)}
         </div>
       </Section>
 
@@ -53,7 +48,7 @@ export default function Home() {
           {experience.map((entry) => (
             <article key={`${entry.organization}-${entry.role}`} className="grid gap-3 py-6 md:grid-cols-[11rem_1fr] md:gap-8">
               <div className="text-sm leading-6 text-text-muted"><p>{entry.dates}</p>{entry.location ? <p>{entry.location}</p> : null}</div>
-              <div><h3 className="text-lg font-semibold text-text-strong">{entry.role}</h3><p className="mt-1 text-sm font-medium text-text">{entry.organization}</p><ul className="mt-3 space-y-2 text-sm leading-6 text-text">{entry.details.map((detail) => <li key={detail}>{detail}</li>)}</ul>{entry.technologies ? <ul className="mt-4 flex flex-wrap gap-2" aria-label={`${entry.organization} technologies`}>{entry.technologies.map((technology) => <li key={technology} className="rounded bg-surface-subtle px-2 py-1 text-xs font-medium text-text-muted">{technology}</li>)}</ul> : null}</div>
+              <div><p className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-text-muted">{entry.kind}</p><h3 className="mt-2 text-lg font-semibold text-text-strong">{entry.role}</h3><p className="mt-1 text-sm font-medium text-text">{entry.organization}</p><ul className="mt-3 space-y-2 text-sm leading-6 text-text">{entry.details.map((detail) => <li key={detail}>{detail}</li>)}</ul>{entry.technologies ? <ul className="mt-4 flex flex-wrap gap-2" aria-label={`${entry.organization} technologies`}>{entry.technologies.map((technology) => <li key={technology} className="rounded bg-surface-subtle px-2 py-1 text-xs font-medium text-text-muted">{technology}</li>)}</ul> : null}</div>
             </article>
           ))}
         </div>

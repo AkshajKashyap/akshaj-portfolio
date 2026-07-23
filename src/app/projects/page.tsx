@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/button-link";
 import { ProjectCard } from "@/components/project-card";
-import { ProjectCardSkeleton } from "@/components/project-card-skeleton";
 import { Section } from "@/components/section";
 import { SectionHeading } from "@/components/section-heading";
 import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Project inventory structure. Verified project details are pending.",
+  description: "Selected machine-learning and software projects with tracked evaluation evidence and source links.",
 };
 
 const featuredProjects = projects.filter((project) => project.featured);
@@ -27,18 +26,14 @@ export default function ProjectsPage() {
       <Section>
         <SectionHeading eyebrow="Selected work" title="Featured projects" description="Detailed systems across causal inference, graph learning, language-model workflows, and computer vision." />
         <div className="mt-8 grid gap-6 lg:grid-cols-2">
-          {featuredProjects.length > 0
-            ? featuredProjects.map((project) => <ProjectCard key={project.slug} project={project} featured />)
-            : Array.from({ length: 4 }, (_, index) => <ProjectCardSkeleton key={index} index={index + 1} featured />)}
+          {featuredProjects.map((project) => <ProjectCard key={project.slug} project={project} featured />)}
         </div>
       </Section>
 
       <Section className="border-t border-border">
         <SectionHeading eyebrow="All work" title="Additional projects" description="More verified local repository work, grouped as a compact inventory." />
         <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {additionalProjects.length > 0
-            ? additionalProjects.map((project) => <ProjectCard key={project.slug} project={project} />)
-            : Array.from({ length: 6 }, (_, index) => <ProjectCardSkeleton key={index} index={index + 1} />)}
+          {additionalProjects.map((project) => <ProjectCard key={project.slug} project={project} />)}
         </div>
       </Section>
     </>

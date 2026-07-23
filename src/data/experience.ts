@@ -1,6 +1,7 @@
 export type Experience = {
   organization: string;
   role: string;
+  kind: "Research" | "Internship" | "Fellowship" | "Contributor work";
   dates: string;
   location?: string;
   details: string[];
@@ -11,6 +12,7 @@ export const experience: Experience[] = [
   {
     organization: "PLAXCO Lab",
     role: "Undergraduate Researcher",
+    kind: "Research",
     dates: "Aug. 2025 – Present",
     location: "Santa Barbara, CA",
     details: [
@@ -22,6 +24,7 @@ export const experience: Experience[] = [
   {
     organization: "Techions",
     role: "Technology Intern",
+    kind: "Internship",
     dates: "May 2024 – Aug. 2024",
     location: "San Jose, CA",
     details: [
@@ -33,6 +36,7 @@ export const experience: Experience[] = [
   {
     organization: "Handshake AI Fellowship",
     role: "AI Evaluation Fellow",
+    kind: "Fellowship",
     dates: "Jan. 2026 – Present",
     location: "Remote",
     details: [
@@ -43,6 +47,7 @@ export const experience: Experience[] = [
   {
     organization: "PromptShop",
     role: "Software / Prompt Engineering Contributor",
+    kind: "Contributor work",
     dates: "Jan. 2026 – Present",
     location: "Remote",
     details: [
