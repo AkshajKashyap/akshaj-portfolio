@@ -2,6 +2,16 @@ import type { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    slug: "hdfs-log-anomaly-detection",
+    title: "HDFS Log Anomaly Detection",
+    summary: "An unsupervised log-analysis system that converts HDFS logs into time-window features, compares anomaly models, and exposes batch scoring through a validated API.",
+    category: "Machine Learning Systems",
+    technologies: ["Python", "scikit-learn", "FastAPI", "Docker", "GitHub Actions"],
+    featured: false,
+    githubUrl: "https://github.com/AkshajKashyap/flagship2-log-anomaly",
+    result: "Parsed 11.2 million HDFS log lines into 2,034 time windows with 205 engineered features for Isolation Forest and One-Class SVM scoring.",
+  },
+  {
     slug: "causal-uplift-experimentation-ops",
     title: "Causal Uplift Experimentation Ops",
     summary: "A reproducible synthetic workflow for evaluating uplift models and carrying treatment-policy decisions through artifact release gates.",

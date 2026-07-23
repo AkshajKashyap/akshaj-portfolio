@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { profile } from "@/data/profile";
 
 const links = [
   { href: "/", label: "Home" },
@@ -57,9 +58,10 @@ export function MobileNavigation() {
               {link.label}
             </Link>
           ))}
-          <span aria-disabled="true" className="flex min-h-11 items-center px-3 text-sm font-medium text-text-muted">
-            Resume [pending]
-          </span>
+          <Link href={profile.resumeUrl} target="_blank" rel="noreferrer" onClick={() => setOpen(false)} className="flex min-h-11 items-center rounded-md px-3 text-sm font-medium text-text hover:bg-surface-subtle hover:text-text-strong">
+            Resume
+            <span className="sr-only"> (opens in a new tab)</span>
+          </Link>
         </nav>
       ) : null}
     </div>

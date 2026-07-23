@@ -15,6 +15,7 @@ This inventory covers the portfolio workspace and sibling Git repositories direc
 | Feed Ranking Ops | `/home/akshaj/Building/feed-ranking-ops` · [remote](https://github.com/AkshajKashyap/feed-ranking-ops) | README, architecture/evaluation docs, portfolio summary, tracked MIND-small fixture | Python, scikit-learn, FastAPI, FAISS, DuckDB | Category-affinity validation/internal-test NDCG@10 0.3552/0.3377 on a train-only chronological holdout | Local serving endpoints; telemetry is local/offline | Public visual/demo URL; official benchmark evaluation | High |
 | Multimodal Retrieval Ops | `/home/akshaj/Building/multimodal-retrieval-ops` · [remote](https://github.com/AkshajKashyap/multimodal-retrieval-ops) | README, architecture/model/evaluation docs, tracked JSON/Markdown metrics, release report | Python, CLIP, FAISS, PyTorch, FastAPI | Flickr8k zero-shot CLIP text-to-image R@1/5/10 0.5538/0.8160/0.8910 | Local artifact-bound service; no production deployment | Public visual/demo URL; resolved Flickr8k source-license status | High |
 | Agent Reliability Bench | `/home/akshaj/Building/agent-reliability-bench` · [remote](https://github.com/AkshajKashyap/agent-reliability-bench) | README, task manifests, test suite | Python, Docker, PyYAML, pytest | Six task contracts listed as fully valid; invalid infrastructure observations are explicitly excluded | Docker-based local benchmark harness; no hosted product/demo | Public visual/demo URL; aggregate benchmark result suitable for a portfolio metric | Medium-high |
+| HDFS Log Anomaly Detection | Local repository not found; [resume-linked repository](https://github.com/AkshajKashyap/flagship2-log-anomaly) | Verified resume source only | Python, scikit-learn, FastAPI, Docker, CI | 11.2M HDFS log lines, 2,034 time windows, 205 engineered features | Resume states a schema-validated FastAPI batch-scoring API with health monitoring and CI smoke tests | Local README/report, public demo, and independent source artifacts | Medium |
 
 ## Provisional candidates not found locally
 
@@ -24,7 +25,6 @@ The following requested candidates had no repository, tracked documentation, rep
 | --- | --- | --- |
 | ResearchOps Agent | None found | Blocked: no verified source |
 | Graph Kernel SVM Portfolio | None found | Blocked: no verified source |
-| HDFS Log Anomaly Detection | None found | Blocked: no verified source |
 | Credit Risk GBDT | None found | Blocked: no verified source |
 | Movie Recommender | None found | Blocked: no verified source |
 | Buyer Persona Segmentation | None found | Blocked: no verified source |
@@ -32,5 +32,6 @@ The following requested candidates had no repository, tracked documentation, rep
 ## Personal-content inventory
 
 - **GitHub:** `https://github.com/AkshajKashyap` is supported by the audited repository remotes.
-- **Email, LinkedIn, resume PDF, profile image, Open Graph image, and project visuals:** no verified local source found; remain pending.
-- **Experience:** no verified resume or experience source found; remains omitted from public content.
+- **Email, LinkedIn, and resume:** verified from `/home/akshaj/Career/resume/current.tex`; the matching resume PDF is present and copied into the portfolio at `public/documents/resume.pdf`.
+- **Experience:** verified from `/home/akshaj/Career/resume/current.tex`; selected entries are documented in `docs/EXPERIENCE_SELECTION.md`.
+- **Profile image, Open Graph image, and project visuals:** no verified/approved portfolio asset found; remain pending.

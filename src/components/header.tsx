@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/container";
 import { MobileNavigation } from "@/components/mobile-navigation";
+import { profile } from "@/data/profile";
 
 const navigation = [
   { href: "/", label: "Home" },
@@ -28,9 +29,10 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <span aria-disabled="true" className="ml-1 rounded-md px-3 py-2 text-sm font-medium text-text-muted">
-            Resume [pending]
-          </span>
+          <Link href={profile.resumeUrl} target="_blank" rel="noreferrer" className="ml-1 rounded-md px-3 py-2 text-sm font-medium text-text transition-colors hover:bg-surface-subtle hover:text-text-strong">
+            Resume
+            <span className="sr-only"> (opens in a new tab)</span>
+          </Link>
         </nav>
         <MobileNavigation />
       </Container>

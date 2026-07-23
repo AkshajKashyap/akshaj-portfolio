@@ -5,15 +5,19 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    title: "Languages and data",
-    skills: ["Python", "pandas", "NumPy"],
+    title: "Languages",
+    skills: ["Python", "TypeScript", "JavaScript", "Java", "C++", "SQL"],
   },
   {
-    title: "Machine learning",
-    skills: ["scikit-learn", "PyTorch", "PyTorch Geometric", "Transformers", "TRL"],
+    title: "Machine learning and data",
+    skills: ["PyTorch", "PyTorch Geometric", "scikit-learn", "NumPy", "pandas"],
   },
   {
-    title: "Systems and serving",
-    skills: ["FastAPI", "Pydantic", "SQLAlchemy", "Docker", "FAISS"],
+    title: "Backend and deployment",
+    skills: ["FastAPI", "Pydantic", "Docker", "REST APIs", "GitHub Actions"],
+  },
+  {
+    title: "Developer tooling",
+    skills: ["Git", "Linux", "Logging", "Monitoring"],
   },
 ];

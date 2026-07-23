@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: "Akshaj Kashyap",
     template: "%s | Akshaj Kashyap",
   },
-  description: "Personal portfolio structure. Verified project and profile details are pending.",
+  description: "Akshaj Kashyap is a UCSB computer science student building applied machine-learning and software systems.",
 };
 
 export default function RootLayout({

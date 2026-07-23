@@ -4,7 +4,7 @@
 
 | Claim | Website location | Supporting source | Status | Qualification / limitation |
 | --- | --- | --- | --- | --- |
-| Akshaj Kashyap is a computer science student at UCSB. | Hero/About/Footer | `docs/WEBSITE_BRIEF.md` | Verified from provided brief | No graduation date, degree detail, or employment claim is added. |
+| Akshaj Kashyap is pursuing a B.S. in Computer Science at UC Santa Barbara, expected December 2028. | Hero/About/Footer | `/home/akshaj/Career/resume/current.tex` | Verified | The hero uses the shorter “UCSB computer science student” phrasing. |
 | Portfolio work focuses on experimentation, evaluation, local serving, and ML workflow controls. | Hero/About | The nine audited repositories in `CONTENT_SOURCE_INVENTORY.md` | Verified synthesis | “Local serving” does not mean public or production deployment. |
 | Four featured projects span causal inference, graph learning, language-model workflows, and computer vision. | Homepage/Projects intro | `FEATURED_PROJECT_REVIEW.md`; project data and source inventory | Verified | This describes portfolio coverage, not professional specialization. |
 | Causal Uplift is a synthetic workflow with a 10,000-row smoke artifact, 201 passing tests, and a hold gate. | Causal Uplift card | `causal-uplift-experimentation-ops/README.md`; `reports/portfolio/verification_0.1.0.md` | Verified | All causal evidence is synthetic; the FastAPI service is local/staging. |
@@ -16,15 +16,12 @@
 | Feed Ranking uses MIND-small with a train-only chronological holdout; category-affinity NDCG@10 is 0.3552/0.3377. | Additional-project card | `reports/portfolio/portfolio_summary.md` | Verified | Internal-test values are not official MIND benchmark results. |
 | Multimodal Retrieval tracked Flickr8k zero-shot CLIP text-to-image R@1/5/10 is 0.5538/0.8160/0.8910. | Additional-project card | `multimodal-retrieval-ops/README.md` | Verified | The project is not production deployed; the Flickr8k source-license status is unresolved in the repo. |
 | Agent Reliability Bench has six fully valid tracked task contracts. | Additional-project card | `agent-reliability-bench/README.md` | Verified | No aggregate agent-performance conclusion is claimed. |
-| GitHub profile link is `github.com/AkshajKashyap`. | Footer | Git remotes for all audited repositories | Verified | LinkedIn and email are not shown. |
+| GitHub, LinkedIn, email, and resume links point to verified destinations. | Header/Hero/Contact/Footer | `/home/akshaj/Career/resume/current.tex`; Git remotes; `public/documents/resume.pdf` | Verified | Resume opens in a new tab; email uses `mailto:`. |
 | Project GitHub and documentation links point to audited repositories. | Project cards | Git remotes; package project URLs where present | Verified | Documentation links use the audited repository's current branch and `docs/` or report directory; they are not separate hosted documentation sites. |
 
 ## Claims intentionally omitted or still blocked
 
-- Experience, job titles, dates, responsibilities, and research affiliations: no verified source.
-- Email address and LinkedIn URL: no verified source.
-- Resume link: no PDF exists at `public/documents/resume.pdf` or elsewhere under `/home/akshaj/Building`.
 - Individual project demo URLs: no currently usable public demo verified.
 - Project screenshots/architecture diagrams in the portfolio: no approved public assets copied into `public/`.
 - Open Graph image, profile image decision, and final favicon: pending.
-- ResearchOps Agent, Graph Kernel SVM Portfolio, HDFS Log Anomaly Detection, Credit Risk GBDT, Movie Recommender, and Buyer Persona Segmentation: no local sources found.
+- ResearchOps Agent, Graph Kernel SVM Portfolio, Credit Risk GBDT, Movie Recommender, and Buyer Persona Segmentation: no local sources found. HDFS Log Anomaly Detection is included using verified resume evidence; a local repository was not found.

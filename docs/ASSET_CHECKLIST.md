@@ -4,10 +4,10 @@ No portfolio-specific public assets are currently present. `public/documents/` a
 
 | Asset | Required before launch | Expected location / format | Status |
 | --- | --- | --- | --- |
-| Resume PDF | Yes | `public/documents/resume.pdf`; accessible, text-selectable PDF | Missing |
-| GitHub profile URL | Yes | Verified `https://github.com/...` destination | Missing |
-| LinkedIn URL | Recommended | Verified `https://www.linkedin.com/in/...` destination | Missing |
-| Contact email | Yes | Public address or deliberately chosen contact alias | Missing |
+| Resume PDF | Yes | `public/documents/resume.pdf`; accessible, text-selectable PDF | Present: copied unchanged from verified `~/Career/resume/current.pdf` |
+| GitHub profile URL | Yes | Verified `https://github.com/...` destination | Present: verified in resume source and repository remotes |
+| LinkedIn URL | Recommended | Verified `https://www.linkedin.com/in/...` destination | Present: verified in resume source |
+| Contact email | Yes | Public address or deliberately chosen contact alias | Present: verified in resume source |
 | Project repository URLs | Per published project where shareable | Exact repository links | Missing for all projects |
 | Live demo URLs | When a public demo exists | Exact HTTPS links | Missing/unverified |
 | Documentation URLs | When separate from repository | Exact URLs | Missing/unverified |
