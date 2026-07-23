@@ -15,6 +15,7 @@ export interface Project {
   featured: boolean;
   githubUrl: string;
   demoUrl?: string;
+  documentationUrl?: string;
   result?: string;
   image?: string;
 }

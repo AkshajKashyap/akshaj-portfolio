@@ -10,7 +10,9 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
   return (
     <article className={`rounded-lg border border-border bg-surface ${featured ? "grid overflow-hidden md:grid-cols-12" : "p-5"}`}>
       {featured ? (
-        <div className="order-2 aspect-video bg-surface-subtle md:order-none md:col-span-5" aria-hidden="true" />
+        <div className="order-2 flex aspect-video items-end bg-surface-subtle p-5 md:order-none md:col-span-5" aria-label={project.image ? "Project visual" : "Project visual pending"}>
+          <span className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-text-muted">{project.image ? "Project visual" : "Visual pending"}</span>
+        </div>
       ) : null}
       <div className={featured ? "p-5 md:col-span-7 md:p-8" : ""}>
         <p className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-text-muted">{project.category}</p>
@@ -24,10 +26,11 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
             ))}
           </ul>
         ) : null}
-        {project.githubUrl || project.demoUrl ? (
+        {project.githubUrl || project.demoUrl || project.documentationUrl ? (
           <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm">
             {project.githubUrl ? <ExternalLink href={project.githubUrl}>GitHub</ExternalLink> : null}
             {project.demoUrl ? <ExternalLink href={project.demoUrl}>Demo</ExternalLink> : null}
+            {project.documentationUrl ? <ExternalLink href={project.documentationUrl}>Documentation</ExternalLink> : null}
           </div>
         ) : null}
       </div>
