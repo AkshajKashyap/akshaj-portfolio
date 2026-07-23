@@ -23,7 +23,8 @@ and interests.
 5. Experience and research
 6. About
 7. Skills
-8. Contact and footer
+8. Contact
+9. Footer
 
 ## Featured projects
 
