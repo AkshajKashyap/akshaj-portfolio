@@ -11,13 +11,13 @@ type ButtonLinkProps = {
 export function ButtonLink({ children, href, variant = "primary", className = "" }: ButtonLinkProps) {
   const styles =
     variant === "primary"
-      ? "border-accent bg-accent text-white hover:border-accent-hover hover:bg-accent-hover"
-      : "border-border bg-surface text-text-strong hover:bg-surface-subtle";
+      ? "border-accent bg-accent text-canvas hover:border-accent-hover hover:bg-accent-hover"
+      : "border-border bg-transparent text-text-strong hover:border-text-muted hover:bg-surface";
 
   return (
     <Link
       href={href}
-      className={`inline-flex min-h-11 items-center justify-center rounded-md border px-4 py-2 text-sm font-semibold transition-colors duration-150 ${styles} ${className}`}
+      className={`group inline-flex min-h-11 items-center justify-center rounded-md border px-5 py-2.5 text-sm font-semibold transition-colors duration-150 ${styles} ${className}`}
     >
       {children}
     </Link>

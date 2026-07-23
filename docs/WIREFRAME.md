@@ -2,9 +2,9 @@
 
 ## Global frame
 
-- Desktop content width: `min(1120px, calc(100% - 64px))`; mobile: `calc(100% - 40px)`.
+- Desktop content width: `min(1240px, calc(100% - 64px))`; mobile: `calc(100% - 40px)`.
 - Sticky header height: 64px desktop / 60px mobile. Main sections use 96px desktop and 64px mobile vertical spacing.
-- All project visuals use a consistent 16:9 frame. A missing visual should use a restrained labeled placeholder during development, never a stock image.
+- Optional verified project visuals use a consistent 16:9 frame. When no visual exists, omit the frame entirely; never use a stock image or placeholder panel.
 
 ## Desktop homepage
 
@@ -12,20 +12,18 @@
 ┌──────────────────────────────────────────────────────────────────────┐
 │ Akshaj Kashyap    Projects  Experience  About  Contact     Resume   │  64
 ├──────────────────────────────────────────────────────────────────────┤
-│                         HERO (single column, left aligned)           │
-│  Eyebrow / name                                                       │
-│  Headline (max 720px)                                                 │
-│  Supporting text (max 620px)                                         │
-│  [View projects]  [Resume (PDF)]                                     │  360–440
+│ HERO: identity + positioning (8 cols) | focus index (4 cols)         │
+│  Akshaj Kashyap / positioning / supporting text                      │
+│  [Explore projects]  [View résumé]                                   │  compact
 ├──────────────────────────────────────────────────────────────────────┤
 │ FEATURED PROJECTS                                                     │
-│  [wide card: text 7 cols | visual 5 cols]                            │
-│  [wide card: visual 5 cols | text 7 cols]                            │  repeat ×4
-│  Each: category, title, summary, evidence, tags, links               │
+│  [numbered card] [numbered card]                                     │
+│  [numbered card] [numbered card]                                     │
+│  Each: number, category, title, summary, evidence, tags, links       │
 ├──────────────────────────────────────────────────────────────────────┤
 │ ADDITIONAL PROJECTS                                                   │
-│  [compact card] [compact card] [compact card]                        │
-│  [compact card] [compact card] [compact card]  [View all projects]  │
+│  [compact list item] [compact list item]                             │
+│  [compact list item] [compact list item]                             │
 ├──────────────────────────────────────────────────────────────────────┤
 │ EXPERIENCE AND RESEARCH (single column entries, optional)            │
 ├──────────────────────────────┬───────────────────────────────────────┤
@@ -38,8 +36,8 @@
 ```
 
 - Hero aligns to the content left edge, vertically balanced but not viewport-filling on short screens. CTA buttons sit beneath copy, left aligned.
-- Featured cards alternate visual position for rhythm but preserve text before visual in DOM order. Card padding 28–32px; 24px internal gap.
-- Additional-project grid uses three equal columns above 1024px, with cards of equal visual weight and no images unless meaningful.
+- Featured cards use a two-column editorial grid above 1024px. Optional verified visuals may appear, but the layout is complete without them.
+- Additional projects use a quieter two-column structured list above 1024px.
 - Experience entries use a left date/label rail (about 180px) and right content column. Omit if no verified entries.
 - About/skills use a 7/5 column split, aligned at top. Contact has a full-width thin top border and a single clear email CTA.
 
@@ -84,8 +82,8 @@
 │ Shared navigation                                                     │
 ├──────────────────────────────────────────────────────────────────────┤
 │ PROJECTS: title + 1–2 sentence inventory introduction                │
-│ Featured projects: 2-column cards (each visual above/alongside text) │
-│ Additional projects: 3-column compact-card grid                      │
+│ Featured projects: 2-column numbered editorial cards                │
+│ Additional projects: 2-column compact structured list               │
 │ Optional archive: text list only, only when it exists                │
 │ Shared contact/footer                                                 │
 └──────────────────────────────────────────────────────────────────────┘

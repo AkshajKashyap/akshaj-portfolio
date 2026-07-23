@@ -22,7 +22,7 @@ Version one is a static Next.js App Router, TypeScript, and Tailwind site backed
 
 ## Phase 2 — Global layout and design tokens
 
-- **Goal:** Establish the light-first foundation, typography, spacing, shared container, and reusable low-level styles from the design system.
+- **Goal:** Establish the dark-first foundation, typography, spacing, shared container, and reusable low-level styles from the design system.
 - **Status:** Can begin immediately.
 - **Likely files:** modify `src/app/globals.css`, `src/app/layout.tsx`; create shared components such as `src/components/site-shell.tsx`, `src/components/container.tsx`, and `src/components/ui/` only if reuse is clear.
 - **Inputs/dependencies:** `docs/DESIGN_SYSTEM.md`, existing Geist font setup.

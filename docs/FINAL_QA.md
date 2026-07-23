@@ -8,7 +8,7 @@
 
 ## Responsive checks
 
-Source-level responsive review covered 320px, 375px, 768px, 1024px, and 1440px layouts. The implementation uses 20px mobile gutters, single-column mobile cards, two-column tablet grids, three-column desktop additional-project grids, wrapping link groups, and 44px minimum interactive controls. No visual browser automation is configured in this repository.
+Source-level responsive review covered 320px, 375px, 768px, 1024px, 1440px, and 1720px layouts. The implementation uses 20px mobile gutters, a capped 1240px wide-screen container, single-column mobile cards, two-column desktop featured cards and additional-project lists, wrapping link groups, and 44px minimum interactive controls. No visual browser automation is configured in this repository.
 
 ## Accessibility checks
 
@@ -18,7 +18,7 @@ Source-level responsive review covered 320px, 375px, 768px, 1024px, and 1440px l
 - Visible `:focus-visible` outline and reduced-motion styling are defined globally.
 - Mobile menu exposes its name, expanded state, controlled region, and Escape behavior.
 - External links announce that they open in a new tab; resume links have descriptive labels.
-- Project cards omit optional visual panels when no real image exists.
+- Project cards omit optional visual panels when no real image exists and use numbered editorial hierarchy instead.
 
 ## Link and resume checks
 

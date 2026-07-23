@@ -44,7 +44,7 @@ No unsupported links, metrics, experience details, project results, or personal 
 - Static Next.js App Router + TypeScript + Tailwind site with local structured data.
 - Homepage in this exact order: Navigation, Hero, Featured Projects, Additional Projects, Experience and Research, About, Skills, Contact, Footer.
 - Four detailed featured projects, additional projects visible on the homepage, and a dedicated `/projects` inventory route.
-- Responsive, accessible light-first presentation with a resume PDF and only verified external/contact links.
+- Responsive, accessible dark-first presentation with a resume PDF and only verified external/contact links.
 - No individual project pages in v1.
 
 ## Explicitly deferred

@@ -42,9 +42,9 @@ homepage section and a dedicated `/projects` page.
 
 - Clean and restrained
 - Responsive
-- Light background
-- Dark text
-- One muted accent color
+- Deep-navy background
+- High-contrast off-white text
+- Restrained blue, cyan, and violet accents
 - Generous whitespace
 - Minimal animations
 - Strong typography

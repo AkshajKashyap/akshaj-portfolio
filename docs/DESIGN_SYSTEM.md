@@ -2,74 +2,78 @@
 
 ## Direction
 
-Light-first, editorial-technical, and quiet. Use strong typography, hairline boundaries, and generous whitespace to organize information. The page should feel closer to an engineering case-study index than a marketing landing page. No gradients, glass effects, animated backgrounds, typing effects, skill bars, excessive icons, large shadows, oversized rounded rectangles, neon colors, or animation libraries.
+Dark-first, editorial-technical, and restrained. Deep navy surfaces, off-white type, thin structural borders, and precise spacing create hierarchy without relying on screenshots. A subtle blue/violet hero glow and faint CSS grid add depth; neither carries essential information. Avoid cyberpunk styling, neon text, terminal motifs, glass cards, heavy shadows, large animated gradients, oversized rounded rectangles, or animation libraries.
 
 ## Tokens
 
 | Token | Value | Use |
 | --- | --- | --- |
-| Canvas | `#F8FAFC` | Page background |
-| Surface | `#FFFFFF` | Cards, header/menu surface |
-| Surface subtle | `#F1F5F9` | Code/tag and quiet areas |
-| Text strong | `#0F172A` | Headings and primary text |
-| Text | `#334155` | Body text |
-| Text muted | `#64748B` | Eyebrows, metadata |
-| Accent | `#2563EB` | Links, primary controls, focus reinforcement |
-| Accent hover | `#1D4ED8` | Interactive hover |
-| Accent subtle | `#DBEAFE` | Selected/quiet accent backgrounds |
-| Border | `#CBD5E1` | Card and divider borders |
-| Focus ring | `#1D4ED8` | Keyboard focus outline |
-| Error | `#B91C1C` | Validation/error only |
+| Canvas | `#080C16` | Primary page background |
+| Secondary surface | `#0D1422` | Alternating sections and footer |
+| Card surface | `#111B2C` | Featured cards and compact panels |
+| Elevated surface | `#172238` | Evidence blocks, tags, mobile menu |
+| Text strong | `#F4F7FC` | Headings and primary labels |
+| Text | `#A5B0C3` | Body text |
+| Text muted | `#718096` | Metadata and supporting labels |
+| Border | `#25334A` | Dividers and component borders |
+| Primary accent | `#7C9CFF` | Primary controls and focus |
+| Accent hover | `#9EB4FF` | Primary hover state |
+| Secondary accent | `#65E6C4` | Controlled project/timeline details |
+| Violet accent | `#A78BFA` | Controlled project details |
 
 ## Typography
 
-- Primary: Geist Sans (already present through `next/font`); fallbacks: `ui-sans-serif, system-ui, sans-serif`.
-- Mono: Geist Mono for small technical labels only.
-- H1: 48px / 1.08 / 650 desktop; 36px / 1.12 mobile.
-- H2: 30px / 1.2 / 650 desktop; 26px / 1.25 mobile.
-- H3: 20px / 1.3 / 600.
-- Body: 16px / 1.65 / 400; lead: 18px / 1.6 / 400.
-- Metadata/tag: 13px / 1.4 / 500; use slight tracking only for uppercase eyebrows.
+- Primary: Geist Sans; fallbacks: `ui-sans-serif, system-ui, sans-serif`.
+- Mono: Geist Mono only for section numbers, project numbers, categories, and metadata.
+- Hero name: 48px mobile, 60px small screens, 72px desktop; controlled line height and tight tracking.
+- H2: 28px mobile, 32px tablet, 36px desktop.
+- H3: 18–24px depending on card hierarchy.
+- Body: 15–18px with 1.55–1.75 line height.
+- Metadata: 10–11px with deliberate uppercase tracking.
 
 ## Layout and spacing
 
-- Maximum content width: 1120px.
-- Spacing scale: 4, 8, 12, 16, 24, 32, 48, 64, 96px.
-- Page gutters: 32px desktop, 20px mobile.
-- Section spacing: 96px desktop, 64px mobile.
-- Radius: 6px for buttons/inputs; 8px for cards; never pill-shaped except small tags if needed.
-- Shadows: none by default. At most `0 1px 2px rgb(15 23 42 / 0.06)` for an open mobile menu; borders do the structural work.
+- Maximum content width: 1240px.
+- Page gutters: 20px mobile, 24px small screens, 32px tablet/desktop.
+- Section spacing: 64px mobile, 80px tablet, 96px large desktop.
+- Spacing scale remains based on 4, 8, 12, 16, 24, 32, 48, 64, 80, and 96px.
+- Radius: 6px controls; 8px cards and panels.
+- Shadows: none by default; one restrained menu shadow is permitted.
 
 ## Components
 
 | Component | Specification |
 | --- | --- |
-| Primary button | Accent background, white text, 44px minimum height, 16px horizontal padding; hover uses accent-hover; active slightly darker. |
-| Secondary button | Surface background, strong text, 1px border; hover surface-subtle. |
-| Text link | Accent text with visible underline offset; hover accent-hover. External-link indicator only if it improves clarity, not as decoration. |
-| Featured card | Surface, 1px border, 8px radius, no large shadow; visual frame, then well-spaced content. |
-| Additional card | Border-top or full thin border, compact padding, no image required. |
-| Tag | Surface-subtle background, text-muted, 4px radius, 13px type; tags are supplementary, never the main content. |
+| Primary button | Blue accent background, canvas text, 44px minimum height; no physical lift. |
+| Secondary button | Transparent background, thin border, strong text; quiet surface hover. |
+| Text link | Underline or clear arrow affordance; primary and secondary link hierarchy. |
+| Featured card | Two-column editorial grid at desktop, surface background, thin border, 2px accent edge, numbered metadata, evidence panel, and concise links. |
+| Additional project | Compact bordered list item with title, purpose, result, and source link; visually quieter than featured work. |
+| Experience item | Vertical timeline entry with explicit work-type label, dates, organization, and concise details. |
+| Tag | Elevated surface or plain mono text; supplemental rather than dominant. |
 
 ## Interaction
 
-- Use short 120–160ms color/border transitions only; respect `prefers-reduced-motion` by removing nonessential transitions.
-- Hover must not move layout or reveal required information.
-- Keyboard focus: 2px solid `#1D4ED8`, 2px offset, clearly visible on every control.
-- Maintain visible focus after mobile-menu interactions.
+- Use 150–200ms color, border, background, and 2px arrow transitions only.
+- Hover must not reflow or physically lift cards.
+- Keyboard focus: 2px solid primary accent with 3px offset.
+- Hero textures are static and decorative.
+- `prefers-reduced-motion` removes nonessential transition duration and smooth scrolling.
 
 ## Breakpoints
 
-- Mobile: `< 768px`.
-- Tablet: `768px–1023px` (two-column additional-project grid; featured card can remain one column if text/visual need it).
-- Desktop: `≥ 1024px` (full nav, 12-column layout, three-column compact grid).
+- Mobile: `< 640px`; accessible menu and single-column content.
+- Small/tablet: `640px–1023px`; desktop navigation and stacked major sections.
+- Desktop: `≥ 1024px`; asymmetric hero, 12-column composition, and two-column project grids.
+- Wide desktop: layouts remain capped at 1240px through 1720px viewports.
 
 ## Accessibility requirements
 
-- Semantic landmarks: header, nav, main, sections with headings, footer.
-- One H1 per route; headings must not skip levels.
-- Text contrast meets WCAG AA (4.5:1 for normal text); controls retain clear noncolor affordances.
-- All visuals have meaningful alt text or empty alt text if purely decorative.
-- Buttons/links have descriptive accessible names; menu exposes expanded/collapsed state.
-- Touch targets are at least 44×44px. Layout functions at 200% zoom and with keyboard alone.
-- Do not rely on color, hover, motion, or an image to communicate essential information.
+- Semantic landmarks and one H1 per route.
+- Ordered heading levels and descriptive section labels.
+- WCAG AA text contrast.
+- Every interactive target is at least 44px tall where applicable.
+- Visible focus, keyboard-complete navigation, and accessible mobile-menu state.
+- External links announce new-tab behavior.
+- Decorative glow/grid layers are ignored by assistive technology.
+- Essential information never depends on color, hover, motion, or imagery.

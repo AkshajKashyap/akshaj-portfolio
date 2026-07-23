@@ -1,28 +1,34 @@
 @import "tailwindcss";
 
 :root {
-  --canvas: #f8fafc;
-  --surface: #ffffff;
-  --surface-subtle: #f1f5f9;
-  --text-strong: #0f172a;
-  --text: #334155;
-  --text-muted: #64748b;
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
-  --accent-subtle: #dbeafe;
-  --border: #cbd5e1;
+  --canvas: #080c16;
+  --surface-subtle: #0d1422;
+  --surface: #111b2c;
+  --surface-elevated: #172238;
+  --text-strong: #f4f7fc;
+  --text: #a5b0c3;
+  --text-muted: #718096;
+  --accent: #7c9cff;
+  --accent-hover: #9eb4ff;
+  --accent-subtle: #18284d;
+  --accent-secondary: #65e6c4;
+  --accent-violet: #a78bfa;
+  --border: #25334a;
 }
 
 @theme inline {
   --color-canvas: var(--canvas);
   --color-surface: var(--surface);
   --color-surface-subtle: var(--surface-subtle);
+  --color-surface-elevated: var(--surface-elevated);
   --color-text-strong: var(--text-strong);
   --color-text: var(--text);
   --color-text-muted: var(--text-muted);
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-accent-subtle: var(--accent-subtle);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-violet: var(--accent-violet);
   --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -38,6 +44,7 @@ html {
 
 body {
   min-width: 320px;
+  overflow-x: hidden;
   background: var(--canvas);
   color: var(--text);
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
@@ -49,8 +56,42 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent-hover);
-  outline-offset: 2px;
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.hero-atmosphere {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.hero-atmosphere::before {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  background:
+    radial-gradient(circle at 78% 32%, rgb(124 156 255 / 0.16), transparent 28rem),
+    radial-gradient(circle at 88% 10%, rgb(167 139 250 / 0.1), transparent 22rem);
+  content: "";
+  pointer-events: none;
+}
+
+.hero-atmosphere::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image:
+    linear-gradient(rgb(124 156 255 / 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(124 156 255 / 0.035) 1px, transparent 1px);
+  background-size: 42px 42px;
+  content: "";
+  mask-image: linear-gradient(to bottom, black, transparent 90%);
+  pointer-events: none;
+}
+
+.text-balance {
+  text-wrap: balance;
 }
 
 @media (prefers-reduced-motion: reduce) {
