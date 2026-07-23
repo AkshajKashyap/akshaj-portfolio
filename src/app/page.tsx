@@ -1,8 +1,8 @@
 import { ButtonLink } from "@/components/button-link";
+import { CompactProjectArchiveRow } from "@/components/compact-project-archive-row";
 import { ExperienceEntry } from "@/components/experience-entry";
 import { ExternalLink } from "@/components/external-link";
 import { FeaturedProjectStory } from "@/components/featured-project-story";
-import { ProjectArchiveRow } from "@/components/project-archive-row";
 import { Section } from "@/components/section";
 import { SectionHeading } from "@/components/section-heading";
 import { experience } from "@/data/experience";
@@ -12,12 +12,20 @@ import { skillGroups } from "@/data/skills";
 
 const featuredProjects = projects.filter((project) => project.featured);
 const additionalProjects = projects.filter((project) => !project.featured);
+const additionalProjectSummaries: Record<string, string> = {
+  "hdfs-log-anomaly-detection": "Detects anomalous HDFS log sequences using engineered time-window features and isolation-based models.",
+  "contextual-bandit-decision-ops": "Evaluates contextual decision policies offline before promoting them into a monitored staging workflow.",
+  "feature-store-monitoring-ops": "Tests temporal features for offline and online consistency, drift, and serving reliability.",
+  "feed-ranking-ops": "Builds and evaluates a two-stage news recommendation pipeline with temporal data preparation, local serving, and monitoring.",
+  "multimodal-retrieval-ops": "Evaluates image-text retrieval with CLIP and FAISS, including exact and approximate search, local serving, and privacy-safe monitoring.",
+  "agent-reliability-bench": "Validates AI coding-agent tasks and runs controlled trials inside isolated Docker environments.",
+};
 
 export default function Home() {
   return (
     <>
-      <Section className="border-b border-border py-12 sm:py-14 lg:py-16">
-        <div className="grid gap-8 lg:grid-cols-12 lg:items-end lg:gap-12">
+      <Section className="border-b border-border !py-10 sm:!py-14 lg:!py-20">
+        <div className="grid gap-6 sm:gap-8 lg:grid-cols-12 lg:items-start lg:gap-12">
           <div className="lg:col-span-7">
             <h1 className="font-editorial max-w-4xl text-balance text-[46px] font-semibold leading-[0.98] tracking-[-0.035em] text-text-strong sm:text-[58px] lg:text-[68px]">
               Building models is only half the work.
@@ -25,7 +33,7 @@ export default function Home() {
           </div>
           <div className="border-t border-accent pt-5 lg:col-span-5">
             <p className="max-w-xl text-lg leading-8 text-text">
-              My projects focus on how machine-learning systems are evaluated, tested, deployed, and improved—not just whether a model can produce a prediction.
+              My projects focus on how machine-learning systems are evaluated, tested, deployed, and improved. The work goes beyond whether a model can produce a prediction.
             </p>
             <p className="mt-5 font-mono text-[10px] font-medium leading-5 tracking-[0.08em] text-text-muted">
               Causal inference · Graph learning · Language-model evaluation · Computer vision
@@ -77,15 +85,17 @@ export default function Home() {
       </Section>
 
       <Section className="border-y border-border bg-surface-subtle">
-        <div className="grid gap-8 lg:grid-cols-12 lg:gap-12">
-          <div className="lg:col-span-4">
-            <SectionHeading eyebrow="Archive" title="Additional projects" description="A quieter index of systems work beyond the four lead projects." />
-          </div>
-          <div className="lg:col-span-8">
-            {additionalProjects.map((project) => (
-              <ProjectArchiveRow key={project.slug} project={project} />
-            ))}
-          </div>
+        <div className="border-b-[3px] border-accent pb-5">
+          <SectionHeading eyebrow="Archive" title="Additional projects" description="A compact index of other systems and experiments." />
+        </div>
+        <div className="mt-3">
+          {additionalProjects.map((project) => (
+            <CompactProjectArchiveRow
+              key={project.slug}
+              project={project}
+              summary={additionalProjectSummaries[project.slug] ?? project.summary}
+            />
+          ))}
         </div>
       </Section>
 
