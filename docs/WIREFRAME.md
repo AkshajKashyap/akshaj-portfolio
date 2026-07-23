@@ -3,66 +3,72 @@
 ## Global frame
 
 - Desktop content width: `min(1240px, calc(100% - 64px))`; mobile: `calc(100% - 40px)`.
-- Sticky header height: 64px desktop / 60px mobile. Main sections use 96px desktop and 64px mobile vertical spacing.
-- Optional verified project visuals use a consistent 16:9 frame. When no visual exists, omit the frame entirely; never use a stock image or placeholder panel.
+- The non-sticky masthead contains a centered name row, a 3px green rule, then an identity/navigation row.
+- Main sections use approximately 96px desktop and 64px mobile vertical spacing.
+- Optional verified project visuals use a consistent frame. When no visual exists, omit the frame entirely.
 
 ## Desktop homepage
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────┐
-│ Akshaj Kashyap    Projects  Experience  About  Contact     Resume   │  64
+│                         AKSHAJ KASHYAP                               │
+╞══════════════════════════════════════════════════════════════════════╡
+│ ML systems / evaluation       Work Experience About Contact Résumé  │
 ├──────────────────────────────────────────────────────────────────────┤
-│ HERO: identity + positioning (8 cols) | focus index (4 cols)         │
-│  Akshaj Kashyap / positioning / supporting text                      │
-│  [Explore projects]  [View résumé]                                   │  compact
+│ BUILDING MODELS IS ONLY HALF THE WORK.                               │
+│ Deck, topic line, [Read the projects] [View résumé]                 │
 ├──────────────────────────────────────────────────────────────────────┤
-│ FEATURED PROJECTS                                                     │
-│  [numbered card] [numbered card]                                     │
-│  [numbered card] [numbered card]                                     │
-│  Each: number, category, title, summary, evidence, tags, links       │
+│ FEATURED PROJECTS                                                    │
+│ ┌──────────────────────────────────────────┬───────────────────────┐ │
+│ │ CAUSAL EVALUATION — lead story (8 cols) │ MOLECULAR — 4 cols   │ │
+│ │ summary / evidence / tech / links       │ evidence / links     │ │
+│ └──────────────────────────────────────────┴───────────────────────┘ │
+│ ┌──────────────────────────────┬───────────────────────────────────┐ │
+│ │ LLM RELIABILITY              │ PLANT DISEASE VISIONOPS          │ │
+│ └──────────────────────────────┴───────────────────────────────────┘ │
 ├──────────────────────────────────────────────────────────────────────┤
-│ ADDITIONAL PROJECTS                                                   │
-│  [compact list item] [compact list item]                             │
-│  [compact list item] [compact list item]                             │
+│ ADDITIONAL PROJECTS / RULED ARCHIVE ROWS                             │
+│ category | title | purpose | result | repository                    │
 ├──────────────────────────────────────────────────────────────────────┤
-│ EXPERIENCE AND RESEARCH (single column entries, optional)            │
-├──────────────────────────────┬───────────────────────────────────────┤
-│ ABOUT (7 cols)               │ SKILLS (5 cols; grouped text lists)  │
+│ EXPERIENCE / RESEARCH — two-column ruled article list               │
+├────────────────────────────────────┬─────────────────────────────────┤
+│ ABOUT                              │ SKILLS                          │
 ├──────────────────────────────────────────────────────────────────────┤
-│ CONTACT: brief statement + primary email/link                          │
+│ CONTACT — “Continue the conversation.” + verified links             │
 ├──────────────────────────────────────────────────────────────────────┤
-│ FOOTER                                                                │
+│ MINIMAL FOOTER                                                        │
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
-- Hero aligns to the content left edge, vertically balanced but not viewport-filling on short screens. CTA buttons sit beneath copy, left aligned.
-- Featured cards use a two-column editorial grid above 1024px. Optional verified visuals may appear, but the layout is complete without them.
-- Additional projects use a quieter two-column structured list above 1024px.
-- Experience entries use a left date/label rail (about 180px) and right content column. Omit if no verified entries.
-- About/skills use a 7/5 column split, aligned at top. Contact has a full-width thin top border and a single clear email CTA.
+- The hero is concise and does not repeat the masthead name.
+- The first featured row creates clear 8/4-column prominence; the second row gives two projects equal weight.
+- Every featured story retains category, verified summary, evidence, technology, and relevant source/documentation actions.
+- Additional projects are scan-friendly archive rows, not cards.
+- Experience is a ruled two-column list above 1024px. About and skills use a coordinated split rather than independent panels.
 
 ## Mobile homepage
 
 ```text
 ┌──────────────────────────────┐
-│ Akshaj Kashyap   Projects  ☰ │
+│       AKSHAJ KASHYAP         │
+╞══════════════════════════════╡
+│ ML systems     Work     Menu │
 ├──────────────────────────────┤
-│ HERO                         │
-│ headline                     │
-│ supporting copy              │
-│ [View projects]              │
-│ [Resume (PDF)]               │
+│ BUILDING MODELS IS ONLY      │
+│ HALF THE WORK.               │
+│ deck / topics                │
+│ [Read the projects]          │
+│ [View résumé]                │
 ├──────────────────────────────┤
 │ FEATURED                     │
-│ [visual]                     │
-│ category / title / copy      │
-│ evidence / tags / links      │  repeat ×4
+│ lead story                   │
+│ major story                  │
+│ standard story               │
+│ standard story               │
 ├──────────────────────────────┤
-│ ADDITIONAL                   │
-│ [compact card]               │  one column
-│ [View all projects]          │
+│ ADDITIONAL / archive rows    │
 ├──────────────────────────────┤
-│ EXPERIENCE (optional)        │
+│ EXPERIENCE                   │
 │ ABOUT                        │
 │ SKILLS                       │
 │ CONTACT                      │
@@ -70,31 +76,37 @@
 └──────────────────────────────┘
 ```
 
-- At 767px and below, all content is one column; 20px side gutters and 64px section gaps.
-- Featured visual appears above content; cards have 20px padding and 16px gaps. Links wrap onto separate lines when needed.
-- CTAs stack full width only below 420px; otherwise remain content-width buttons.
-- The menu panel replaces nonessential header links; it is not a second permanent navigation row.
+- At narrow widths, all editorial grids become one column while preserving story order and evidence.
+- Archive fields stack into labeled text groups; repository actions remain visible.
+- Calls to action wrap naturally and become full width only when necessary.
+- The menu contains Experience, About, Contact, and Résumé; it is keyboard operable and dismissible with Escape.
 
 ## Desktop `/projects`
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────┐
-│ Shared navigation                                                     │
+│ Shared two-row masthead                                              │
 ├──────────────────────────────────────────────────────────────────────┤
-│ PROJECTS: title + 1–2 sentence inventory introduction                │
-│ Featured projects: 2-column numbered editorial cards                │
-│ Additional projects: 2-column compact structured list               │
-│ Optional archive: text list only, only when it exists                │
-│ Shared contact/footer                                                 │
+│ THE PROJECT ARCHIVE                                                  │
+│ Concise verified inventory introduction + return-home link           │
+├──────────────────────────────────────────────────────────────────────┤
+│ CAUSAL EVALUATION — full-width lead                                  │
+├───────────────────────────────────────────┬──────────────────────────┤
+│ MOLECULAR / LLM RELIABILITY               │ PLANT DISEASE            │
+├──────────────────────────────────────────────────────────────────────┤
+│ ADDITIONAL WORK — structured ruled archive rows                      │
+├──────────────────────────────────────────────────────────────────────┤
+│ Shared minimal footer                                                 │
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
-- Intro max width 680px. Use 48px gap before featured inventory.
-- Featured grid is two columns with cards aligned to the top; do not force equal heights when evidence length differs.
-- Category filters are omitted in v1 unless the supplied inventory grows beyond a simple scan.
+- `/projects` uses the same editorial language but is an inventory page, not a duplicate homepage.
+- It contains the same four detailed featured projects and all additional projects.
+- Category filters and individual case-study routes are outside version one.
 
 ## Mobile `/projects`
 
-- Shared mobile navigation, then single-column title/introduction.
-- Featured cards stack visual then content; additional cards stack one per row.
-- Preserve the same card information hierarchy and link order as desktop; no hover-only information.
+- Shared compact masthead followed by one route H1 and introduction.
+- All four featured stories stack in the same editorial order.
+- Additional archive rows use labeled fields with no hover-only content.
+- Long technology labels, evidence, and links wrap without horizontal scrolling.

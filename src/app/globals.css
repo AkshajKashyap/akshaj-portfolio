@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --canvas: #080c16;
-  --surface-subtle: #0d1422;
-  --surface: #111b2c;
-  --surface-elevated: #172238;
-  --text-strong: #f4f7fc;
-  --text: #a5b0c3;
-  --text-muted: #718096;
-  --accent: #7c9cff;
-  --accent-hover: #9eb4ff;
-  --accent-subtle: #18284d;
-  --accent-secondary: #65e6c4;
-  --accent-violet: #a78bfa;
-  --border: #25334a;
+  --canvas: #f3efe4;
+  --surface-subtle: #e9e3d5;
+  --surface: #f8f5ec;
+  --surface-elevated: #dce6df;
+  --text-strong: #171a17;
+  --text: #343932;
+  --text-muted: #66675f;
+  --accent: #0b3b2e;
+  --accent-hover: #315e4f;
+  --accent-subtle: #dce6df;
+  --accent-secondary: #315e4f;
+  --accent-violet: #0b3b2e;
+  --border: #b8b2a5;
 }
 
 @theme inline {
@@ -32,6 +32,7 @@
   --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-editorial: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 * {
@@ -51,8 +52,8 @@ body {
 }
 
 ::selection {
-  background: var(--accent-subtle);
-  color: var(--text-strong);
+  background: var(--accent);
+  color: var(--surface);
 }
 
 :focus-visible {
@@ -60,34 +61,8 @@ body {
   outline-offset: 3px;
 }
 
-.hero-atmosphere {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-}
-
-.hero-atmosphere::before {
-  position: absolute;
-  z-index: -2;
-  inset: 0;
-  background:
-    radial-gradient(circle at 78% 32%, rgb(124 156 255 / 0.16), transparent 28rem),
-    radial-gradient(circle at 88% 10%, rgb(167 139 250 / 0.1), transparent 22rem);
-  content: "";
-  pointer-events: none;
-}
-
-.hero-atmosphere::after {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  background-image:
-    linear-gradient(rgb(124 156 255 / 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(124 156 255 / 0.035) 1px, transparent 1px);
-  background-size: 42px 42px;
-  content: "";
-  mask-image: linear-gradient(to bottom, black, transparent 90%);
-  pointer-events: none;
+.font-editorial {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-balance {

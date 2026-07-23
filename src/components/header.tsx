@@ -12,27 +12,43 @@ const navigation = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-30 border-b border-border/80 bg-canvas/85 backdrop-blur-md">
-      <Container className="flex h-16 items-center justify-between gap-4">
-        <Link href="/" aria-label="Akshaj Kashyap, home" className="inline-flex size-9 items-center justify-center rounded-md border border-border bg-surface font-mono text-xs font-semibold tracking-[-0.03em] text-text-strong transition-colors hover:border-accent hover:text-accent">
-          AK
-        </Link>
-        <nav aria-label="Primary navigation" className="hidden items-center gap-1 sm:flex">
-          {navigation.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="rounded-md px-3 py-2 text-sm font-medium text-text transition-colors hover:text-text-strong"
-            >
-              {item.label}
-            </Link>
-          ))}
-          <Link href={profile.resumeUrl} target="_blank" rel="noreferrer" className="ml-2 rounded-md border border-border px-3.5 py-2 text-sm font-medium text-text-strong transition-colors hover:border-accent hover:text-accent">
-            Résumé
-            <span className="sr-only"> (opens in a new tab)</span>
+    <header className="bg-canvas">
+      <Container>
+        <div className="flex min-h-20 items-center justify-center border-b-[3px] border-accent py-3 sm:min-h-24">
+          <Link
+            href="/"
+            aria-label="Akshaj Kashyap, home"
+            className="font-editorial text-center text-[32px] font-semibold uppercase leading-none tracking-[0.045em] text-accent transition-colors hover:text-accent-hover sm:text-[42px] lg:text-[50px]"
+          >
+            Akshaj Kashyap
           </Link>
-        </nav>
-        <MobileNavigation />
+        </div>
+        <div className="flex min-h-14 items-center justify-between gap-4 border-b border-border">
+          <p className="font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-text-muted sm:text-[10px]">
+            Computer Science · UC Santa Barbara
+          </p>
+          <nav aria-label="Primary navigation" className="hidden items-center gap-1 md:flex">
+            {navigation.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="px-3 py-2 text-sm font-medium text-text transition-colors hover:text-accent"
+              >
+                {item.label}
+              </Link>
+            ))}
+            <Link
+              href={profile.resumeUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="ml-2 border-l border-border px-4 py-2 text-sm font-medium text-text-strong transition-colors hover:text-accent"
+            >
+              Résumé
+              <span className="sr-only"> (opens in a new tab)</span>
+            </Link>
+          </nav>
+          <MobileNavigation />
+        </div>
       </Container>
     </header>
   );

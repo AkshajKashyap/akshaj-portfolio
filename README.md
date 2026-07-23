@@ -1,6 +1,6 @@
 # Akshaj Kashyap Portfolio
 
-A static, text-first portfolio for Akshaj Kashyap, a UCSB computer science student. It presents verified machine-learning and software projects, selected experience, and professional contact links.
+A static, newspaper-inspired editorial portfolio for Akshaj Kashyap, a UCSB computer science student. It presents verified machine-learning and software projects, selected experience, and professional contact links.
 
 ## Stack
 

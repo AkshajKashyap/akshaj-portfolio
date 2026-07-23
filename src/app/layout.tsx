@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className="flex min-h-screen flex-col bg-canvas font-sans text-text antialiased">
         <a
-          className="sr-only fixed left-4 top-4 z-50 rounded-md bg-accent px-4 py-3 text-sm font-semibold text-canvas focus:not-sr-only"
+          className="sr-only fixed left-4 top-4 z-50 rounded-sm bg-accent px-4 py-3 text-sm font-semibold text-surface focus:not-sr-only"
           href="#main-content"
         >
           Skip to content
