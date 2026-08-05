@@ -4,7 +4,7 @@
 
 | Claim | Website location | Supporting source | Status | Qualification / limitation |
 | --- | --- | --- | --- | --- |
-| Akshaj Kashyap is pursuing a B.S. in Computer Science at UC Santa Barbara, expected December 2028. | Hero/About/Footer | `/home/akshaj/Career/resume/current.tex` | Verified | The hero uses the shorter “UCSB computer science student” phrasing. |
+| Akshaj Kashyap is pursuing a B.S. in Computer Science at UC Santa Barbara, expected June 2028. | Hero/About/Footer | `/home/akshaj/Career/resume/current.tex` | Verified | The hero uses the shorter “UCSB computer science student” phrasing. |
 | Portfolio work focuses on experimentation, evaluation, local serving, and ML workflow controls. | Hero/About | The nine audited repositories in `CONTENT_SOURCE_INVENTORY.md` | Verified synthesis | “Local serving” does not mean public or production deployment. |
 | Four featured projects span causal inference, graph learning, language-model workflows, and computer vision. | Homepage/Projects intro | `FEATURED_PROJECT_REVIEW.md`; project data and source inventory | Verified | This describes portfolio coverage, not professional specialization. |
 | Causal Uplift is a synthetic workflow with a 10,000-row smoke artifact, 201 passing tests, and a hold gate. | Causal Uplift card | `causal-uplift-experimentation-ops/README.md`; `reports/portfolio/verification_0.1.0.md` | Verified | All causal evidence is synthetic; the FastAPI service is local/staging. |

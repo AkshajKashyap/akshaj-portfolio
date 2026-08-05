@@ -118,7 +118,7 @@ export default function Home() {
             <SectionHeading eyebrow="About" title="Clear systems, clearly explained." />
             <div className="mt-6 max-w-2xl space-y-5 text-base leading-8 text-text">
               <p>
-                Akshaj Kashyap is pursuing a B.S. in Computer Science at UC Santa Barbara, expected December 2028. His work combines applied machine learning with the surrounding engineering: reproducible experiments, evaluation protocols, local APIs, and monitoring.
+                Akshaj Kashyap is pursuing a B.S. in Computer Science at UC Santa Barbara, expected June 2028. His work combines applied machine learning with the surrounding engineering: reproducible experiments, evaluation protocols, local APIs, and monitoring.
               </p>
               <p>
                 Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes how he approaches projects: organize complicated information, question unsupported claims, and communicate results clearly.

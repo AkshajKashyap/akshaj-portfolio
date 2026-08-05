@@ -6,7 +6,7 @@ Source priority was applied as follows: `/home/akshaj/Career/resume/current.tex`
 | --- | --- | --- | --- | --- |
 | Name: Akshaj Kashyap | Header, footer, About, metadata | `current.tex` heading | Verified | None. |
 | UCSB computer science student | Hero, footer | `current.tex` education entry | Verified | “University of California, Santa Barbara” is shortened to “UCSB.” |
-| B.S. Computer Science, expected Dec. 2028 | About | `current.tex` education entry | Verified | “Expected Dec. 2028” is expanded to “expected December 2028.” |
+| B.S. Computer Science, expected June 2028 | About | `current.tex` education entry | Verified | “Expected June 2028” is presented as “expected June 2028.” |
 | Applied ML/software systems focus | Hero, About, Contact | `current.tex` projects/experience/skills; verified project inventory | Verified synthesis | Condenses supported work areas; does not assign a professional title. |
 | PLAXCO Lab role, date, location, 44 datasets, and SACMES work | Experience | `current.tex` PLAXCO Lab entry | Verified | One resume bullet becomes two scan-friendly sentences. |
 | Techions role, date, location, CV pipeline, and 27% accuracy improvement | Experience | `current.tex` Techions entry | Verified | One resume bullet becomes two scan-friendly sentences. |
