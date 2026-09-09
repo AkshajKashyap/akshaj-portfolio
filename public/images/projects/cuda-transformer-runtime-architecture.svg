@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">CUDA Transformer Runtime inference path</title>
+  <desc id="description">A six-stage path from UTF-8 prompt to BPE tokens, embeddings, KV-cached decoder layers, RMSNorm and language-model head, and a greedy output token.</desc>
+  <defs>
+    <marker id="arrow" markerHeight="12" markerWidth="12" orient="auto" refX="10" refY="6">
+      <path d="M0 0 12 6 0 12Z" fill="#0b3b2e"/>
+    </marker>
+    <style>
+      .eyebrow { fill: #315e4f; font: 700 28px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 4px; }
+      .heading { fill: #171a17; font: 700 54px Georgia, Cambria, serif; }
+      .step { fill: #0b3b2e; font: 700 23px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 2px; }
+      .label { fill: #171a17; font: 700 40px ui-sans-serif, system-ui, sans-serif; }
+      .detail { fill: #343932; font: 500 27px ui-sans-serif, system-ui, sans-serif; }
+      .metric-label { fill: #315e4f; font: 700 23px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 2px; }
+      .metric { fill: #171a17; font: 650 31px ui-sans-serif, system-ui, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f3efe4"/>
+  <rect x="28" y="28" width="1544" height="844" fill="none" stroke="#b8b2a5" stroke-width="3"/>
+  <text x="72" y="88" class="eyebrow">CORRECTNESS-FIRST FP32 INFERENCE PATH</text>
+  <text x="72" y="150" class="heading">Prompt to generated token</text>
+
+  <g>
+    <rect x="72" y="210" width="400" height="188" rx="3" fill="#f8f5ec" stroke="#0b3b2e" stroke-width="4"/>
+    <text x="104" y="256" class="step">01 · INPUT</text>
+    <text x="104" y="319" class="label">UTF-8 prompt</text>
+    <text x="104" y="361" class="detail">Host text input</text>
+
+    <path d="M488 304H546" fill="none" stroke="#0b3b2e" stroke-width="5" marker-end="url(#arrow)"/>
+
+    <rect x="564" y="210" width="400" height="188" rx="3" fill="#f8f5ec" stroke="#0b3b2e" stroke-width="4"/>
+    <text x="596" y="256" class="step">02 · TOKENIZE</text>
+    <text x="596" y="319" class="label">BPE tokens</text>
+    <text x="596" y="361" class="detail">llama2.c-compatible</text>
+
+    <path d="M980 304H1038" fill="none" stroke="#0b3b2e" stroke-width="5" marker-end="url(#arrow)"/>
+
+    <rect x="1056" y="210" width="472" height="188" rx="3" fill="#f8f5ec" stroke="#0b3b2e" stroke-width="4"/>
+    <text x="1088" y="256" class="step">03 · LOOKUP</text>
+    <text x="1088" y="319" class="label">Embeddings</text>
+    <text x="1088" y="361" class="detail">Device activations</text>
+  </g>
+
+  <path d="M1292 414V466" fill="none" stroke="#0b3b2e" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="1056" y="484" width="472" height="188" rx="3" fill="#dce6df" stroke="#0b3b2e" stroke-width="4"/>
+    <text x="1088" y="530" class="step">04 · DECODE</text>
+    <text x="1088" y="588" class="label">Decoder layers</text>
+    <text x="1088" y="634" class="detail">Per-layer KV caches</text>
+
+    <path d="M1040 578H982" fill="none" stroke="#0b3b2e" stroke-width="5" marker-end="url(#arrow)"/>
+
+    <rect x="564" y="484" width="400" height="188" rx="3" fill="#f8f5ec" stroke="#0b3b2e" stroke-width="4"/>
+    <text x="596" y="530" class="step">05 · PROJECT</text>
+    <text x="596" y="588" class="label">RMSNorm + LM head</text>
+    <text x="596" y="634" class="detail">Vocabulary logits</text>
+
+    <path d="M548 578H490" fill="none" stroke="#0b3b2e" stroke-width="5" marker-end="url(#arrow)"/>
+
+    <rect x="72" y="484" width="400" height="188" rx="3" fill="#f8f5ec" stroke="#0b3b2e" stroke-width="4"/>
+    <text x="104" y="530" class="step">06 · SELECT</text>
+    <text x="104" y="588" class="label">Greedy token</text>
+    <text x="104" y="634" class="detail">Deterministic output</text>
+  </g>
+
+  <line x1="72" x2="1528" y1="724" y2="724" stroke="#b8b2a5" stroke-width="3"/>
+  <text x="72" y="774" class="metric-label">CORRECTNESS</text>
+  <text x="72" y="822" class="metric">Max CPU/CUDA logit error: 2.563×10⁻⁵</text>
+  <text x="900" y="774" class="metric-label">RTX 3050 LAPTOP GPU</text>
+  <text x="900" y="822" class="metric">64-token continuation: ~266.8 tokens/s</text>
+</svg>

@@ -1,59 +1,48 @@
 # Final QA
 
-## Pages and content inspected
+Completed September 8, 2026 against the final local implementation.
 
-- `/`: masthead, editorial hero, four featured projects, additional-project archive, experience, About, skills, contact, and footer.
-- `/projects`: route introduction, four featured projects in an archive-specific hierarchy, all additional projects, and return link.
-- `/documents/resume.pdf`: verified as a nonempty PDF copied unchanged from the verified resume source.
-- Structured project, experience, skills, profile, metric, link, and resume data remain unchanged by the visual redesign.
+## Automated checks
 
-## Visual-system checks
+- `npm run lint`: passed.
+- `npm run build`: passed, including TypeScript and static generation for `/` and `/projects`.
+- `git diff --check`: passed.
+- No package or major dependency was added; Playwright and Chromium were downloaded only under `/tmp` for QA.
 
-- Warm-paper canvas and British racing green replace the previous dark navy palette.
-- The masthead uses the full name, a strong green rule, and a separate navigation row.
-- Serif headlines, sans-serif body text, mono metadata, square corners, thin rules, and restrained pale-green evidence insets establish the editorial hierarchy.
-- Featured work uses one lead story, one major story, and two lower stories rather than a uniform card grid.
-- Additional projects, experience, and skills use ruled lists instead of dashboard-style cards or tag clouds.
-- No fake newspaper date, issue number, stock image, invented project image, decorative metric, or unsupported claim is present.
+## Rendered browser checks
 
-## Responsive checks
+The final homepage was rendered in headless Chromium at 320, 375, 768, 1024, and 1440 CSS pixels. The final `/projects` page was rendered at 320px, and desktop/mobile screenshots were reviewed.
 
-Source-level review covers the requested 320px, 375px, 768px, 1024px, 1440px, and 1720px targets. The implementation uses 20px mobile gutters, a capped 1240px container, single-column narrow layouts, an 8/4-column desktop lead row, wrapping controls, and at least 44px primary interactive targets. The masthead collapses to an accessible compact menu before its links become crowded.
+- Horizontal overflow was 0px at every requested homepage width and on `/projects` at 320px.
+- The featured sequence was CUDA Transformer Runtime, Causal Uplift Experimentation Ops, Molecular GNN Property Ops, and MatchStream at every width.
+- Homepage additional work contained exactly four entries in the approved order.
+- `/projects` contained the same four featured projects followed by three archive groups; no featured project was repeated below.
+- The 320px and 375px mobile menu exposed all five approved actions. Escape closed the menu and returned focus to its trigger.
+- Keyboard traversal produced the global visible 2px solid focus outline.
+- Reduced-motion emulation produced automatic scrolling and effectively zero-duration transitions.
+- The `work`, `experience`, `about`, `skills`, and `contact` targets were present; `/projects` rendered successfully.
+- The résumé resolved at `/documents/resume.pdf`.
 
-No browser-based visual-regression tooling is installed, so the responsive audit is source-level plus production-build verification. No package was added for QA.
+## Visual and accessibility checks
 
-## Accessibility checks
+- The warm-paper, racing-green, serif/sans/mono editorial system and asymmetric 8/4 featured composition remain intact.
+- Exactly two project visuals render: the CUDA architecture diagram and the MatchStream dashboard crop.
+- Both render in responsive 16:9 frames at 278px wide on a 320px viewport and scale cleanly on larger screens.
+- Each visual has the approved meaningful alt text; all key evidence also remains available as text.
+- CUDA remains the lead without imagery spreading across the rest of the project inventory.
+- No stock imagery, generic AI art, gradient, dark mode, animation library, filter, CMS, backend, analytics, or project-detail route was introduced.
 
-- One H1 per route and ordered section headings.
-- Semantic header, navigation, main, section, article, and footer landmarks.
-- Skip link targets `#main-content`.
-- Global visible `:focus-visible` treatment and reduced-motion styling.
-- Mobile menu exposes its label, expanded state, controlled region, and Escape behavior.
-- External links disclose new-tab behavior; resume links have descriptive labels.
-- Text and controls use high-contrast ink or racing green on light paper.
-- Essential project evidence is text, never image-, color-, motion-, or hover-dependent.
-- Optional visual frames are omitted when no real project image is available.
+## Claims and links
 
-## Link and resume checks
+- CUDA correctness and performance, causal synthetic policy evidence, Molecular GNN repeated-seed results, MatchStream local replay/throughput, and the additional-project metrics retain their required context.
+- The causal result says `synthetic` and requires real prospective validation.
+- MatchStream throughput says `local`; CUDA names the RTX 3050 Laptop GPU and makes no production-engine comparison.
+- Every rendered GitHub repository and documentation URL returned HTTP 200 during QA.
+- Agent Reliability Bench remains a verified archive entry, but its unreachable/private GitHub destination is intentionally not rendered.
+- No demo link or Movie Recommender entry is shown because neither had a verified public source.
 
-- Resume path remains `/documents/resume.pdf`; the asset is nonempty.
-- Resume, GitHub, LinkedIn, and email destinations remain sourced from verified local profile data.
-- Project repository and documentation destinations remain sourced from the audited project data.
-- No demo link is rendered because no usable public demo was verified.
+## Remaining limitations
 
-## Metadata and sharing
-
-- Root and projects titles and descriptions use verified, grounded language.
-- Robots metadata permits indexing without declaring an unverified production sitemap or domain.
-- Open Graph and Twitter images remain deferred because no verified production domain or approved social asset exists.
-- `src/app/icon.tsx` provides the AK monogram in the current green-and-paper palette.
-
-## Deferred optional assets and limitations
-
-- Project screenshots and architecture diagrams remain optional and are cleanly omitted.
-- No profile image, social image, custom domain, analytics, CMS, contact backend, dark mode, or animation library is configured.
-- Individual project case-study pages remain outside version one.
-
-## Deployment readiness
-
-The content and implementation have no known blockers for a static deployment. Before deployment, configure the hosting project and, if desired, provide a verified canonical production domain. A custom sitemap and social-sharing image remain intentionally deferred until their required inputs exist.
+- Browser QA is local and headless rather than a cross-browser device lab.
+- Agent Reliability Bench has no public source action until its repository becomes publicly reachable.
+- Open Graph art, canonical-domain work, analytics, and deployment remain intentionally out of scope.

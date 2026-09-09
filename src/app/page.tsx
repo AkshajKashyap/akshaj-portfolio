@@ -10,16 +10,10 @@ import { profile } from "@/data/profile";
 import { projects } from "@/data/projects";
 import { skillGroups } from "@/data/skills";
 
-const featuredProjects = projects.filter((project) => project.featured);
-const additionalProjects = projects.filter((project) => !project.featured);
-const additionalProjectSummaries: Record<string, string> = {
-  "hdfs-log-anomaly-detection": "Detects anomalous HDFS log sequences using engineered time-window features and isolation-based models.",
-  "contextual-bandit-decision-ops": "Evaluates contextual decision policies offline before promoting them into a monitored staging workflow.",
-  "feature-store-monitoring-ops": "Tests temporal features for offline and online consistency, drift, and serving reliability.",
-  "feed-ranking-ops": "Builds and evaluates a two-stage news recommendation pipeline with temporal data preparation, local serving, and monitoring.",
-  "multimodal-retrieval-ops": "Evaluates image-text retrieval with CLIP and FAISS, including exact and approximate search, local serving, and privacy-safe monitoring.",
-  "agent-reliability-bench": "Validates AI coding-agent tasks and runs controlled trials inside isolated Docker environments.",
-};
+const leadProject = projects.find((project) => project.homepagePlacement === "lead");
+const majorProject = projects.find((project) => project.homepagePlacement === "major");
+const standardProjects = projects.filter((project) => project.homepagePlacement === "standard");
+const additionalProjects = projects.filter((project) => project.homepagePlacement === "additional");
 
 export default function Home() {
   return (
@@ -33,14 +27,14 @@ export default function Home() {
           </div>
           <div className="border-t border-accent pt-5 lg:col-span-5">
             <p className="max-w-xl text-lg leading-8 text-text">
-              My projects focus on how machine-learning systems are evaluated, tested, deployed, and improved. The work goes beyond whether a model can produce a prediction.
+              I build machine-learning systems that connect rigorous experiments with model inference and reliable software. The projects emphasize evaluation, performance, and failure behavior—not just model outputs.
             </p>
             <p className="mt-5 font-mono text-[10px] font-medium leading-5 tracking-[0.08em] text-text-muted">
-              Causal inference · Graph learning · Language-model evaluation · Computer vision
+              Causal inference · Graph learning · GPU inference · Reliable systems
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ButtonLink href="/#work">
-                Read the projects <span aria-hidden="true" className="ml-2 transition-transform duration-150 group-hover:translate-x-0.5">→</span>
+                Explore featured work <span aria-hidden="true" className="ml-2 transition-transform duration-150 group-hover:translate-x-0.5">→</span>
               </ButtonLink>
               <a
                 href={profile.resumeUrl}
@@ -65,20 +59,20 @@ export default function Home() {
         </div>
 
         <div className="mt-8 grid gap-10 lg:grid-cols-12 lg:gap-0">
-          {featuredProjects[0] ? (
+          {leadProject ? (
             <div className="lg:col-span-8 lg:pr-8">
-              <FeaturedProjectStory project={featuredProjects[0]} prominence="lead" />
+              <FeaturedProjectStory project={leadProject} prominence="lead" />
             </div>
           ) : null}
-          {featuredProjects[1] ? (
+          {majorProject ? (
             <div className="lg:col-span-4 lg:border-l lg:border-border lg:pl-8">
-              <FeaturedProjectStory project={featuredProjects[1]} prominence="major" />
+              <FeaturedProjectStory project={majorProject} prominence="major" />
             </div>
           ) : null}
         </div>
 
         <div className="mt-10 grid gap-10 border-t border-border pt-8 md:grid-cols-2 md:gap-8">
-          {featuredProjects.slice(2).map((project) => (
+          {standardProjects.map((project) => (
             <FeaturedProjectStory key={project.slug} project={project} prominence="standard" />
           ))}
         </div>
@@ -86,15 +80,11 @@ export default function Home() {
 
       <Section className="border-y border-border bg-surface-subtle">
         <div className="border-b-[3px] border-accent pb-5">
-          <SectionHeading eyebrow="Archive" title="Additional projects" description="A compact index of other systems and experiments." />
+          <SectionHeading eyebrow="More work" title="Additional projects" description="Four more projects spanning applied machine learning, research, and software systems." />
         </div>
         <div className="mt-3">
           {additionalProjects.map((project) => (
-            <CompactProjectArchiveRow
-              key={project.slug}
-              project={project}
-              summary={additionalProjectSummaries[project.slug] ?? project.summary}
-            />
+            <CompactProjectArchiveRow key={project.slug} project={project} />
           ))}
         </div>
       </Section>
@@ -104,7 +94,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Experience"
             title="Research and technical work"
-            description="Selected work across research, applied computer vision, model evaluation, and software workflows."
+            description="Selected work across research data analysis, applied computer vision, AI evaluation, and reliable software workflows."
           />
         </div>
         <div className="mt-7 grid gap-x-10 md:grid-cols-2">
@@ -118,13 +108,10 @@ export default function Home() {
             <SectionHeading eyebrow="About" title="Clear systems, clearly explained." />
             <div className="mt-6 max-w-2xl space-y-5 text-base leading-8 text-text">
               <p>
-                Akshaj Kashyap is pursuing a B.S. in Computer Science at UC Santa Barbara, expected June 2028. His work combines applied machine learning with the surrounding engineering: reproducible experiments, evaluation protocols, local APIs, and monitoring.
+                Akshaj Kashyap is pursuing a B.S. in Computer Science at UC Santa Barbara, expected June 2028. His work is centered on machine learning and the engineering questions around it: how experiments are designed, how inference runs, how performance is measured, and how systems behave when assumptions fail.
               </p>
               <p>
-                Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes how he approaches projects: organize complicated information, question unsupported claims, and communicate results clearly.
-              </p>
-              <p>
-                In the PLAXCO Lab, he processes electrochemical data for biosensor experiments; previously, he built computer-vision tooling for vegetation-risk screening at Techions. The projects here extend that approach across causal inference, graph learning, language-model workflows, computer vision, retrieval, and recommendation.
+                In the PLAXCO Lab, he works with electrochemical data and reusable analysis tools for biosensor experiments. Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes his approach: organize complex information, distinguish evidence from assertion, and explain technical decisions clearly.
               </p>
             </div>
           </div>

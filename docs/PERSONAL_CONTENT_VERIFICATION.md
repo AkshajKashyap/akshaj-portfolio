@@ -7,7 +7,7 @@ Source priority was applied as follows: `/home/akshaj/Career/resume/current.tex`
 | Name: Akshaj Kashyap | Header, footer, About, metadata | `current.tex` heading | Verified | None. |
 | UCSB computer science student | Hero, footer | `current.tex` education entry | Verified | “University of California, Santa Barbara” is shortened to “UCSB.” |
 | B.S. Computer Science, expected June 2028 | About | `current.tex` education entry | Verified | “Expected June 2028” is presented as “expected June 2028.” |
-| Applied ML/software systems focus | Hero, About, Contact | `current.tex` projects/experience/skills; verified project inventory | Verified synthesis | Condenses supported work areas; does not assign a professional title. |
+| AI/ML-oriented engineering focus spanning experimentation, inference, performance, and reliable systems | Hero, About, Contact, metadata | `current.tex` projects/experience/skills; verified project inventory | Verified synthesis | Condenses supported work areas; does not claim a current job title or that every project is deployed. |
 | PLAXCO Lab role, date, location, 44 datasets, and SACMES work | Experience | `current.tex` PLAXCO Lab entry | Verified | One resume bullet becomes two scan-friendly sentences. |
 | Techions role, date, location, CV pipeline, and 27% accuracy improvement | Experience | `current.tex` Techions entry | Verified | One resume bullet becomes two scan-friendly sentences. |
 | Handshake AI Fellowship role, dates, 20+ evaluations, and structured justifications | Experience | `current.tex` Handshake entry | Verified | One resume bullet becomes two scan-friendly sentences. |
@@ -15,7 +15,7 @@ Source priority was applied as follows: `/home/akshaj/Career/resume/current.tex`
 | Email: `akshajkashyap@gmail.com` | Contact, footer | `current.tex` heading | Verified | Used as a `mailto:` destination; not repeated as plain text in every location. |
 | LinkedIn: `linkedin.com/in/akshajkashyap` | Contact, footer | `current.tex` heading | Verified | Uses the explicit HTTPS destination from the resume. |
 | GitHub: `github.com/AkshajKashyap` | Contact, footer | `current.tex` heading; audited Git remotes | Verified | Uses the explicit HTTPS destination. |
-| Resume path: `/documents/resume.pdf` | Header, hero, Contact | `current.pdf`, copied byte-for-byte to `public/documents/resume.pdf` | Verified | Link label is “View resume” and opens in a new tab. |
+| Resume path: `/documents/resume.pdf` | Header, hero, Contact | `current.pdf`, copied byte-for-byte to `public/documents/resume.pdf` | Verified | Link label is “View résumé” or “Résumé” and opens in a new tab. |
 
 ## Deliberate omissions
 

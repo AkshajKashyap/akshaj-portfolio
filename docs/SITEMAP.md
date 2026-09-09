@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | `/` | Fast recruiter scan | Hero, selected projects, concise experience/about/skills, contact |
 | `/projects` | Full project inventory and browsing | All publishable featured and additional projects with deeper card detail |
-| `/documents/resume.pdf` | Resume open target | **Placeholder:** add verified PDF at `public/documents/resume.pdf` before launch |
+| `/documents/resume.pdf` | Resume open target | Verified PDF at `public/documents/resume.pdf` |
 
 ## Homepage: exact section order
 
@@ -22,8 +22,8 @@
 
 ### Homepage content boundaries
 
-- Featured Projects: show up to four complete project cards: Causal Uplift Experimentation Ops, Molecular GNN Property Ops, LLM Posttraining Ops, and Plant Disease VisionOps, only as verified content becomes available.
-- Additional Projects: compact list/grid of the remaining publishable projects, each with title, one-line verified summary, category, and project/repository link. Include “View all projects.”
+- Featured Projects: exactly four complete stories in order—CUDA Transformer Runtime, Causal Uplift Experimentation Ops, Molecular GNN Property Ops, and MatchStream.
+- Additional Projects: exactly four compact rows in order—C++ Matching Engine, Plant Disease VisionOps, Valorant Quant Research, and HDFS Log Anomaly Detection—with a route to the full archive.
 - Experience and Research: only verified entries. If none are available at implementation time, omit this section rather than render an empty state.
 - About: short, verified student/technical-focus context; no biographical detail not supplied by Akshaj.
 - Skills: grouped, verified technologies; no proficiency scores.
@@ -31,10 +31,9 @@
 ## `/projects` page
 
 - Header and introductory sentence.
-- Optional accessible category filters only if the inventory is large enough to benefit (initially 10 named projects makes static grouped sections preferable).
 - Featured projects first, with fuller summaries, technical decisions, results/evidence, technologies, and available links.
-- Additional projects second, using a lighter card treatment.
-- An archive is not shown until there are projects deliberately marked archived.
+- Remaining projects appear once under three static sections: Machine learning and applied modeling, ML systems and evaluation, and Software systems.
+- Featured projects are not duplicated in the lower archive sections.
 - Individual project pages do **not** exist in version one. Add them later only when at least several projects have enough verified narrative, diagrams, results, and screenshots to justify a dedicated page; use `/projects/[slug]` then.
 
 ## Navigation
@@ -46,21 +45,20 @@
 
 ## Footer
 
-- Left: `Akshaj Kashyap` and `UCSB Computer Science` (verified by the brief).
-- Right: GitHub, LinkedIn, email, and Resume only when exact verified destinations exist.
-- Include a compact copyright line using the current year; no fabricated location statement.
+- Left: `Akshaj Kashyap · UC Santa Barbara`.
+- Right: Email, LinkedIn, and GitHub using exact verified destinations.
 
 ## Link behavior
 
 - Internal routes and section anchors open in the same tab.
 - External GitHub, LinkedIn, demos, and documentation open in a new tab with `target="_blank"` and `rel="noreferrer"`.
 - Email uses `mailto:`.
-- A resume link opens the PDF in a new tab; the visible label should state `Resume (PDF)`.
+- Résumé links open the verified PDF in a new tab and use the approved `Résumé` or `View résumé` wording according to context.
 - Never render a disabled-looking link or placeholder URL in production.
 
 ## Mobile navigation
 
-- Show name/wordmark, `Projects`, and an accessible menu button at narrow widths.
-- The menu opens a small, solid-background panel below the header with the remaining links and Resume when available.
-- Trap neither focus nor scrolling; close on Escape, link selection, and outside interaction. Keep focus visible and return it to the trigger on close.
+- Show the name/wordmark, identity line, and an accessible menu button at narrow widths.
+- The menu opens a small, solid-background panel with Projects, Experience, About, Contact, and Résumé.
+- Trap neither focus nor scrolling; close on Escape, trigger interaction, and navigation or résumé link selection. Keep focus visible and return it to the trigger when Escape closes the menu.
 - No full-screen animated overlay is needed.

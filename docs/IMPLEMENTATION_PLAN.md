@@ -1,5 +1,7 @@
 # Implementation Plan
 
+> Superseded: retained as the original version-one plan. The approved portfolio update has since been implemented; current behavior is recorded in `SITEMAP.md`, `WIREFRAME.md`, and `FINAL_QA.md`.
+
 ## Delivery boundaries
 
 Version one is a static Next.js App Router, TypeScript, and Tailwind site backed by local structured data. It has a homepage and `/projects`, four detailed featured projects, additional projects on the homepage, and no individual project pages. Build mobile-first and use no new dependency unless a later verified requirement cannot be met with the existing stack.

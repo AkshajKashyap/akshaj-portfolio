@@ -4,7 +4,7 @@ import { MobileNavigation } from "@/components/mobile-navigation";
 import { profile } from "@/data/profile";
 
 const navigation = [
-  { href: "/#work", label: "Work" },
+  { href: "/projects", label: "Projects" },
   { href: "/#experience", label: "Experience" },
   { href: "/#about", label: "About" },
   { href: "/#contact", label: "Contact" },

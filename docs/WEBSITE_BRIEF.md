@@ -1,5 +1,7 @@
 # Akshaj Kashyap Portfolio
 
+> Superseded: retained as historical planning context. The implemented September 2026 direction is documented in `SITE_STRATEGY.md`, `FEATURED_PROJECT_REVIEW.md`, and the current application data.
+
 ## Purpose
 
 Build a simple, clean personal website that helps recruiters and technical

@@ -1,5 +1,7 @@
 # Open Questions
 
+> Superseded: the questions relevant to the September 2026 portfolio update were resolved in the approved implementation brief. Retained for historical context only.
+
 Only verified information or a decision from Akshaj belongs below. Recommendations resolve choices where the planning documents already provide a clear v1 answer.
 
 ## Project selection and ordering

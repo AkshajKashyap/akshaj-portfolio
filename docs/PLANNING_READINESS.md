@@ -1,5 +1,7 @@
 # Planning Readiness Report
 
+> Superseded: the readiness decision has been acted on. This file remains historical and should not be used as the current implementation specification.
+
 ## Documents reviewed
 
 - `docs/WEBSITE_BRIEF.md`

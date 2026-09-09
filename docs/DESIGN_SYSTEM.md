@@ -52,9 +52,9 @@ The native serif stack is intentional: it is fast, robust in static builds, and 
 The masthead has two rows:
 
 1. A centered, full-name wordmark, “Akshaj Kashyap,” linked to the homepage.
-2. A compact identity line and primary navigation for Work, Experience, About, Contact, and Résumé.
+2. A compact identity line and primary navigation for Projects, Experience, About, Contact, and Résumé.
 
-A 3px racing-green rule separates the rows. The masthead is not sticky. Below the desktop breakpoint, secondary links move into an accessible menu while the Work link remains visible.
+A 3px racing-green rule separates the rows. The masthead is not sticky. Below the desktop breakpoint, navigation links move into an accessible menu.
 
 ## Editorial components
 
@@ -71,7 +71,7 @@ A 3px racing-green rule separates the rows. The masthead is not sticky. Below th
 | Experience entry | Ruled editorial entry with type/date rail and role, organization, details, and technology body. |
 | Skills group | Section label plus readable comma-separated skills; avoid tag clouds. |
 
-Optional verified project images may appear in a consistent frame. If no real asset exists, omit the image without substituting stock imagery, gradients, or empty placeholders.
+Exactly two verified project visuals appear in consistent 16:9 frames: the CUDA architecture diagram and the MatchStream dashboard crop. Other projects omit image frames rather than substituting decorative assets.
 
 ## Interaction
 

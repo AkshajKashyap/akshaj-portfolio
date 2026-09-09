@@ -13,18 +13,18 @@
 ┌──────────────────────────────────────────────────────────────────────┐
 │                         AKSHAJ KASHYAP                               │
 ╞══════════════════════════════════════════════════════════════════════╡
-│ ML systems / evaluation       Work Experience About Contact Résumé  │
+│ Computer Science · UCSB  Projects Experience About Contact Résumé   │
 ├──────────────────────────────────────────────────────────────────────┤
 │ BUILDING MODELS IS ONLY HALF THE WORK.                               │
-│ Deck, topic line, [Read the projects] [View résumé]                 │
+│ Deck, topic line, [Explore featured work] [View résumé]             │
 ├──────────────────────────────────────────────────────────────────────┤
 │ FEATURED PROJECTS                                                    │
 │ ┌──────────────────────────────────────────┬───────────────────────┐ │
-│ │ CAUSAL EVALUATION — lead story (8 cols) │ MOLECULAR — 4 cols   │ │
+│ │ CUDA RUNTIME — lead story (8 cols)      │ CAUSAL — 4 cols      │ │
 │ │ summary / evidence / tech / links       │ evidence / links     │ │
 │ └──────────────────────────────────────────┴───────────────────────┘ │
 │ ┌──────────────────────────────┬───────────────────────────────────┐ │
-│ │ LLM RELIABILITY              │ PLANT DISEASE VISIONOPS          │ │
+│ │ MOLECULAR GNN                │ MATCHSTREAM                      │ │
 │ └──────────────────────────────┴───────────────────────────────────┘ │
 ├──────────────────────────────────────────────────────────────────────┤
 │ ADDITIONAL PROJECTS / RULED ARCHIVE ROWS                             │
@@ -52,12 +52,12 @@
 ┌──────────────────────────────┐
 │       AKSHAJ KASHYAP         │
 ╞══════════════════════════════╡
-│ ML systems     Work     Menu │
+│ Computer Science       Menu  │
 ├──────────────────────────────┤
 │ BUILDING MODELS IS ONLY      │
 │ HALF THE WORK.               │
 │ deck / topics                │
-│ [Read the projects]          │
+│ [Explore featured work]      │
 │ [View résumé]                │
 ├──────────────────────────────┤
 │ FEATURED                     │
@@ -79,7 +79,7 @@
 - At narrow widths, all editorial grids become one column while preserving story order and evidence.
 - Archive fields stack into labeled text groups; repository actions remain visible.
 - Calls to action wrap naturally and become full width only when necessary.
-- The menu contains Experience, About, Contact, and Résumé; it is keyboard operable and dismissible with Escape.
+- The menu contains Projects, Experience, About, Contact, and Résumé; it is keyboard operable and dismissible with Escape.
 
 ## Desktop `/projects`
 
@@ -90,18 +90,18 @@
 │ THE PROJECT ARCHIVE                                                  │
 │ Concise verified inventory introduction + return-home link           │
 ├──────────────────────────────────────────────────────────────────────┤
-│ CAUSAL EVALUATION — full-width lead                                  │
+│ CUDA TRANSFORMER RUNTIME — full-width lead                           │
 ├───────────────────────────────────────────┬──────────────────────────┤
-│ MOLECULAR / LLM RELIABILITY               │ PLANT DISEASE            │
+│ CAUSAL / MOLECULAR GNN                     │ MATCHSTREAM              │
 ├──────────────────────────────────────────────────────────────────────┤
-│ ADDITIONAL WORK — structured ruled archive rows                      │
+│ ML/APPLIED · ML SYSTEMS/EVALUATION · SOFTWARE SYSTEMS                │
 ├──────────────────────────────────────────────────────────────────────┤
 │ Shared minimal footer                                                 │
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
 - `/projects` uses the same editorial language but is an inventory page, not a duplicate homepage.
-- It contains the same four detailed featured projects and all additional projects.
+- It contains the same four detailed featured projects, then every remaining verified project once under one of three static archive groups.
 - Category filters and individual case-study routes are outside version one.
 
 ## Mobile `/projects`

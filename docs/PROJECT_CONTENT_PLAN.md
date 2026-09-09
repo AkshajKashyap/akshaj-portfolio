@@ -1,5 +1,7 @@
 # Project Content Plan
 
+> Superseded: this pre-content collection plan is retained for history. Current selections and verified claims live in `CONTENT_SOURCE_INVENTORY.md`, `CONTENT_VERIFICATION.md`, and `src/data/projects.ts`.
+
 ## Publishing rule
 
 The repository currently contains no populated project records, URLs, screenshots, documentation, or verified results. The following inventory is a collection checklist, not approved public copy. Do not publish a field until Akshaj verifies it.

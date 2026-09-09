@@ -13,16 +13,19 @@ const prominenceStyles = {
     article: "border-t-[3px] border-accent pt-5",
     title: "text-[36px] sm:text-[42px] lg:text-[48px]",
     summary: "text-base sm:text-lg",
+    imageSizes: "(max-width: 1023px) calc(100vw - 40px), 776px",
   },
   major: {
     article: "border-t-2 border-accent pt-5",
     title: "text-[30px] sm:text-[34px]",
     summary: "text-[15px]",
+    imageSizes: "(max-width: 1023px) calc(100vw - 40px), 360px",
   },
   standard: {
     article: "border-t border-accent pt-5",
     title: "text-[28px] sm:text-[32px]",
     summary: "text-[15px]",
+    imageSizes: "(max-width: 767px) calc(100vw - 40px), 580px",
   },
 } as const;
 
@@ -31,9 +34,16 @@ export function FeaturedProjectStory({ project, prominence = "standard", classNa
 
   return (
     <article className={`${styles.article} ${className}`}>
-      {project.image ? (
-        <div className="relative mb-5 aspect-[16/8] border border-border bg-surface">
-          <Image src={project.image} alt={`${project.title} project visual`} fill className="object-cover" />
+      {project.visual ? (
+        <div className="relative mb-5 aspect-video overflow-hidden border border-border bg-surface">
+          <Image
+            src={project.visual.src}
+            alt={project.visual.alt}
+            fill
+            sizes={styles.imageSizes}
+            className="object-cover"
+            style={{ objectPosition: project.visual.objectPosition ?? "center" }}
+          />
         </div>
       ) : null}
 
@@ -57,13 +67,15 @@ export function FeaturedProjectStory({ project, prominence = "standard", classNa
       ) : null}
 
       <div className="mt-5 flex flex-wrap gap-x-5 gap-y-3 text-sm">
-        <ExternalLink href={project.githubUrl} className="group no-underline">
-          GitHub <span aria-hidden="true" className="inline-block transition-transform duration-150 group-hover:translate-x-0.5">→</span>
-        </ExternalLink>
+        {project.githubUrl ? (
+          <ExternalLink href={project.githubUrl} className="group no-underline">
+            Source <span aria-hidden="true" className="inline-block transition-transform duration-150 group-hover:translate-x-0.5">→</span>
+          </ExternalLink>
+        ) : null}
         {project.demoUrl ? <ExternalLink href={project.demoUrl}>Demo</ExternalLink> : null}
         {project.documentationUrl ? (
           <ExternalLink href={project.documentationUrl} variant="secondary" className="no-underline">
-            Documentation
+            {project.documentationLabel ?? "Documentation"}
           </ExternalLink>
         ) : null}
       </div>

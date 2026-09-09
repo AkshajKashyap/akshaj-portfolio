@@ -1,27 +1,24 @@
 # Content Verification
 
-## Public claims and sources
+## Published quantitative claims
 
-| Claim | Website location | Supporting source | Status | Qualification / limitation |
-| --- | --- | --- | --- | --- |
-| Akshaj Kashyap is pursuing a B.S. in Computer Science at UC Santa Barbara, expected June 2028. | Hero/About/Footer | `/home/akshaj/Career/resume/current.tex` | Verified | The hero uses the shorter “UCSB computer science student” phrasing. |
-| Portfolio work focuses on experimentation, evaluation, local serving, and ML workflow controls. | Hero/About | The nine audited repositories in `CONTENT_SOURCE_INVENTORY.md` | Verified synthesis | “Local serving” does not mean public or production deployment. |
-| Four featured projects span causal inference, graph learning, language-model workflows, and computer vision. | Homepage/Projects intro | `FEATURED_PROJECT_REVIEW.md`; project data and source inventory | Verified | This describes portfolio coverage, not professional specialization. |
-| Causal Uplift is a synthetic workflow with a 10,000-row smoke artifact, 201 passing tests, and a hold gate. | Causal Uplift card | `causal-uplift-experimentation-ops/README.md`; `reports/portfolio/verification_0.1.0.md` | Verified | All causal evidence is synthetic; the FastAPI service is local/staging. |
-| Molecular GNN compares molecular GNNs on ESOL scaffold splits; GCN mean RMSE is 1.3395 across three seeds. | Molecular GNN card | `reports/portfolio/benchmark_summary.md` | Verified | Metric is ESOL scaffold-split evidence, not a general chemistry-performance claim. |
-| LLM Posttraining implements SFT/preference workflow infrastructure; release smoke passed 8 stages with 0 failures and 3 skips. | LLM card | `reports/portfolio/release_0.1.0.md` | Verified | Tiny fixtures and one-step training validate infrastructure, not model-release quality. |
-| Plant Disease VisionOps runs a 38-class workflow; clean/test and severe-brightness macro F1 are 0.9838 and 0.3286. | Plant Disease card | `reports/final_project_summary.md` | Verified | These results do not establish field readiness. |
-| Contextual Bandit is a synthetic decisioning reference; release verification recorded 57 tests and promotion is hold. | Additional-project card | `reports/portfolio/release_0.1.0.md` | Verified | Not a real-policy quality or launch claim. |
-| Feature Store Monitoring uses synthetic demand data; its tracked workflow reported test RMSE 7.948043. | Additional-project card | `reports/portfolio/portfolio_summary.md` | Verified | Local development storage and local serving are not production infrastructure. |
-| Feed Ranking uses MIND-small with a train-only chronological holdout; category-affinity NDCG@10 is 0.3552/0.3377. | Additional-project card | `reports/portfolio/portfolio_summary.md` | Verified | Internal-test values are not official MIND benchmark results. |
-| Multimodal Retrieval tracked Flickr8k zero-shot CLIP text-to-image R@1/5/10 is 0.5538/0.8160/0.8910. | Additional-project card | `multimodal-retrieval-ops/README.md` | Verified | The project is not production deployed; the Flickr8k source-license status is unresolved in the repo. |
-| Agent Reliability Bench has six fully valid tracked task contracts. | Additional-project card | `agent-reliability-bench/README.md` | Verified | No aggregate agent-performance conclusion is claimed. |
-| GitHub, LinkedIn, email, and resume links point to verified destinations. | Header/Hero/Contact/Footer | `/home/akshaj/Career/resume/current.tex`; Git remotes; `public/documents/resume.pdf` | Verified | Resume opens in a new tab; email uses `mailto:`. |
-| Project GitHub and documentation links point to audited repositories. | Project cards | Git remotes; package project URLs where present | Verified | Documentation links use the audited repository's current branch and `docs/` or report directory; they are not separate hosted documentation sites. |
+| Claim | Repository evidence | Qualification retained on site |
+| --- | --- | --- |
+| CUDA: 21/21 CTest tests, max CPU/CUDA logit error 2.563×10⁻⁵, about 266.8 tokens/s for a 64-token continuation | `cuda-transformer-runtime` README and tracked benchmark/correctness docs | RTX 3050 Laptop GPU; no production or engine-comparison claim |
+| Causal uplift: +4.36 percentage points, $26,900 simulated net value, 3.36 ROI | `causal-uplift-experimentation-ops/docs/portfolio_review.md` and policy reports | Synthetic prospective randomized trial simulation; real validation required |
+| Molecular GNN: GCN RMSE 1.3395 ± 0.0738 vs random forest 1.8480 ± 0.0214 | `molecular-gnn-property-ops` model/evaluation docs | Three seeds on an ESOL scaffold split |
+| MatchStream: all 3,549 events reproduced France 4–3 Argentina; 37.9–44.9 events/s | `matchstream` README, system design, and benchmark notes | Complete local stack; throughput explicitly local |
+| Plant Disease: 0.9838 clean macro F1 and 0.3286 under severe darkening | `plant-disease-visionops/reports/final_project_summary.md` | Corruption result is shown beside clean performance |
+| Valorant: 0.6886 log loss vs 0.6931 baseline; 0.2448 Brier vs 0.2500 | `valorant-quant-research` research/robustness reports | 2024 period was inspected; later checks found the advantage weak and unstable |
+| HDFS: 11.2M lines, 2,034 windows, 205 features | `flagship2-log-anomaly` README/artifacts and verified résumé evidence | No unsupported anomaly precision/recall value |
+| Graph Kernel SVM: 0.8419 MUTAG, 0.6206 PTC_MR, 0.7605 PROTEINS macro F1 | `graph-kernel-svm` README and reports | Strongest recorded methods across ten splits |
+| Credit Risk GBDT: validation threshold 0.09 and 12 passing tests | `credit-risk-gbdt` README/docs/tests | No unsupported deployment or business-impact claim |
 
-## Claims intentionally omitted or still blocked
+Archive claims for LLM Posttraining, Multimodal Retrieval, Feed Ranking, Contextual Bandit, Feature Store, and Agent Reliability remain qualified in `src/data/projects.ts`; synthetic, local, skipped-stage, and non-production limitations are kept with their results.
 
-- Individual project demo URLs: no currently usable public demo verified.
-- Project screenshots/architecture diagrams in the portfolio: no approved public assets copied into `public/`.
-- Open Graph image, profile image decision, and final favicon: pending.
-- ResearchOps Agent, Graph Kernel SVM Portfolio, Credit Risk GBDT, Movie Recommender, and Buyer Persona Segmentation: no local sources found. HDFS Log Anomaly Detection is included using verified resume evidence; a local repository was not found.
+## Publication rules
+
+- Repository evidence is the source of truth for projects.
+- Metrics retain their split, dataset, hardware, simulation, or local-run context where needed.
+- Missing, private, or unreachable repository, demo, and documentation links are omitted rather than represented as placeholders.
+- Movie Recommender remains unpublished because its source was not verified.

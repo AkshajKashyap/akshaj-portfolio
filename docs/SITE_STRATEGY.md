@@ -2,7 +2,7 @@
 
 ## Positioning
 
-Akshaj Kashyap is a UCSB computer science student presenting a concise body of technical project work for software engineering, machine learning, data science, and research internship reviewers. The site should make the work inspectable: clear problem statements, implementation choices, evidence, and direct links to source material.
+Akshaj Kashyap is a UCSB computer science student presenting as an AI/ML-oriented software engineer with depth across rigorous modeling, inference, performance, and reliable software systems. The site makes that work inspectable through clear problem statements, implementation choices, measured evidence, and direct source links.
 
 ## Audiences and their goals
 
@@ -23,7 +23,7 @@ Akshaj Kashyap is a UCSB computer science student presenting a concise body of t
 
 ## Ten-second message
 
-“Akshaj Kashyap is a UCSB CS student with a focused portfolio of software and ML projects, presented with enough evidence to inspect the work.”
+“Akshaj Kashyap builds machine-learning systems that connect rigorous experiments with model inference and reliable software.”
 
 ## Lasting impression
 
@@ -31,7 +31,7 @@ The visitor should remember a technically grounded candidate whose strongest pro
 
 ## Emphasize
 
-- Four verified, polished featured projects once their details are supplied.
+- Four verified featured projects in a deliberate hierarchy: CUDA Transformer Runtime, Causal Uplift Experimentation Ops, Molecular GNN Property Ops, and MatchStream.
 - Problem → build → technical decision → evidence/result on every strong project.
 - Direct GitHub, demo, documentation, resume, and contact paths where available.
 - Clear role-relevant breadth across ML, data, research, and software engineering.
@@ -61,5 +61,5 @@ The visitor should remember a technically grounded candidate whose strongest pro
 | Metrics lack context | Pair each metric with dataset, baseline, split, timeframe, and evaluation method where applicable. |
 | Overclaiming deployment or research impact | Use precise labels and link primary evidence. |
 | Too many shallow projects dilute the best work | Feature only projects meeting the selection rubric; archive or exclude the rest. |
-| Screenshots are decorative or unreadable | Use one purposeful visual per featured project, captioned with what it proves. |
+| Screenshots are decorative or unreadable | Use only the two purposeful, verified featured-project visuals selected for CUDA and MatchStream. |
 | Contact/resume links fail | Validate all public links and PDF download before launch. |

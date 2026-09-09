@@ -14,9 +14,18 @@ export function ProjectArchiveRow({ project }: ProjectArchiveRowProps) {
       </div>
       <p className="text-sm leading-6 text-text">{project.summary}</p>
       {project.result ? <p className="text-xs leading-5 text-text-muted sm:col-span-2 lg:col-span-1">{project.result}</p> : <span />}
-      <ExternalLink href={project.githubUrl} className="self-start whitespace-nowrap no-underline">
-        Repository <span aria-hidden="true" className="inline-block transition-transform duration-150 group-hover:translate-x-0.5">→</span>
-      </ExternalLink>
+      <div className="flex flex-wrap gap-x-4 gap-y-2 lg:flex-col">
+        {project.githubUrl ? (
+          <ExternalLink href={project.githubUrl} className="self-start whitespace-nowrap no-underline">
+            Source <span aria-hidden="true" className="inline-block transition-transform duration-150 group-hover:translate-x-0.5">→</span>
+          </ExternalLink>
+        ) : null}
+        {project.documentationUrl ? (
+          <ExternalLink href={project.documentationUrl} variant="secondary" className="self-start whitespace-nowrap no-underline">
+            {project.documentationLabel ?? "Documentation"}
+          </ExternalLink>
+        ) : null}
+      </div>
     </article>
   );
 }

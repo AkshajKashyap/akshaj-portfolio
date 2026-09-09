@@ -1,6 +1,6 @@
 # Asset Checklist
 
-No portfolio-specific public assets are currently present. `public/documents/` and `public/images/projects/` are intentionally empty placeholder directories; the existing SVG files are Next.js starter assets and should not be used in the final portfolio.
+The portfolio ships the verified résumé plus two purposeful featured-project visuals. No stock imagery or generic AI artwork is used.
 
 | Asset | Required before launch | Expected location / format | Status |
 | --- | --- | --- | --- |
@@ -10,18 +10,18 @@ No portfolio-specific public assets are currently present. `public/documents/` a
 | Contact email | Yes | Public address or deliberately chosen contact alias | Present: verified in resume source |
 | Project repository URLs | Per published project where shareable | Exact repository links | Present for all published projects |
 | Live demo URLs | When a public demo exists | Exact HTTPS links | Missing/unverified |
-| Documentation URLs | When separate from repository | Exact URLs | Missing/unverified |
-| Featured project visual | Optional for version one | `public/images/projects/<slug>.webp` or `.png`, 16:9, 1600px wide target; SVG preferred for diagrams | Omitted cleanly; no approved assets available |
-| Additional architecture diagrams | Only when they clarify the build beyond the featured visual | SVG preferred; otherwise high-resolution PNG/WebP | Missing/unverified |
+| Documentation URLs | When separate from repository | Exact URLs | Present where verified; absent links are omitted |
+| CUDA architecture visual | Required for this update | `public/images/projects/cuda-transformer-runtime-architecture.svg`, 16:9 | Present |
+| MatchStream dashboard crop | Required for this update | `public/images/projects/matchstream-dashboard.png`, approximately 16:9 | Present; derived from the verified repository screenshot |
 | Charts/evaluation figures | Only when they add verified evidence | Export with readable labels and documented data context | Missing/unverified |
-| Profile image decision | Yes—choose intentionally | Use a professional photo or intentionally omit; do not add a placeholder portrait | Undecided |
+| Profile image decision | No | Intentionally omit; do not add a placeholder portrait | Omitted |
 | Open Graph image | Recommended | `public/og.png` or Next metadata-generated image; 1200×630px | Deferred: no verified production domain for stable social-image URLs |
 | Favicon | Yes | Replace starter `src/app/favicon.ico` with approved mark, or retain a simple generated monogram | Present: generated AK monogram in `src/app/icon.tsx` |
 
 ## Per-image requirements
 
 - Use descriptive filenames tied to project slugs.
-- Provide accurate alt text and a caption that says what the image demonstrates.
+- Provide accurate alt text; keep the visible project summary and evidence adjacent so the image never carries the claim alone.
 - Remove sensitive data, private endpoints, credentials, and unreadable tiny UI before export.
 - Use visuals created by Akshaj or assets with clear rights; do not use generic stock imagery.
 - Optimize raster files and keep the original editable source outside public delivery assets when possible.
