@@ -22,8 +22,8 @@
 
 ### Homepage content boundaries
 
-- Featured Projects: exactly four complete stories in order—CUDA Transformer Runtime, Causal Uplift Experimentation Ops, Molecular GNN Property Ops, and MatchStream.
-- Additional Projects: exactly four compact rows in order—C++ Matching Engine, Plant Disease VisionOps, Valorant Quant Research, and HDFS Log Anomaly Detection—with a route to the full archive.
+- Featured Projects: exactly four complete stories in order: CUDA Transformer Runtime, Causal Uplift Experimentation, Molecular Property Prediction with GNNs, and BlockScope.
+- Additional Projects: exactly four compact rows in order: C++ Matching Engine, Gridiron Spatial Intelligence, Plant Disease Classification, and LLM Posttraining Ops, with a route to the full archive.
 - Experience and Research: only verified entries. If none are available at implementation time, omit this section rather than render an empty state.
 - About: short, verified student/technical-focus context; no biographical detail not supplied by Akshaj.
 - Skills: grouped, verified technologies; no proficiency scores.
@@ -31,9 +31,10 @@
 ## `/projects` page
 
 - Header and introductory sentence.
-- Featured projects first, with fuller summaries, technical decisions, results/evidence, technologies, and available links.
-- Remaining projects appear once under three static sections: Machine learning and applied modeling, ML systems and evaluation, and Software systems.
-- Featured projects are not duplicated in the lower archive sections.
+- Featured projects appear first, with fuller summaries, technical decisions, results/evidence, technologies, and available links.
+- Remaining projects appear once in recruiter-priority order: the four homepage-additional projects, then MatchStream, Multimodal Retrieval, Feed Ranking Ops, Contextual Bandit Decision Ops, and Valorant Quant Research.
+- Featured projects are not duplicated in the lower archive list.
+- Graph Kernel SVM remains hidden until its public numerical evidence is inspectable. The rendered page therefore contains 13 projects while structured data retains the approved 14-project inventory.
 - Individual project pages do **not** exist in version one. Add them later only when at least several projects have enough verified narrative, diagrams, results, and screenshots to justify a dedicated page; use `/projects/[slug]` then.
 
 ## Navigation

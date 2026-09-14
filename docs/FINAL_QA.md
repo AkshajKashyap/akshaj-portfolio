@@ -46,3 +46,39 @@ The final homepage was rendered in headless Chromium at 320, 375, 768, 1024, and
 - Browser QA is local and headless rather than a cross-browser device lab.
 - Agent Reliability Bench has no public source action until its repository becomes publicly reachable.
 - Open Graph art, canonical-domain work, analytics, and deployment remain intentionally out of scope.
+
+## Portfolio refresh QA, September 13, 2026
+
+This section records the approved content and hierarchy refresh without replacing the September 8 historical results above.
+
+### Automated checks
+
+- `npm run lint`: passed.
+- `npm run build`: passed with TypeScript checking and static generation for `/` and `/projects`.
+- `git diff --check`: passed.
+- Public-facing em-dash search across `src` and `public`: no matches.
+- No package or project dependency was added. Playwright and Chromium were installed only under `/tmp` for QA.
+
+### Rendered browser checks
+
+- The homepage and `/projects` were rendered in headless Chromium at 375px, 768px, and 1440px.
+- Horizontal overflow measured 0px on both routes at all three widths.
+- The featured sequence is CUDA Transformer Runtime, Causal Uplift Experimentation, Molecular Property Prediction with GNNs, and BlockScope.
+- Homepage additional work is C++ Matching Engine, Gridiron Spatial Intelligence, Plant Disease Classification, and LLM Posttraining Ops.
+- The rendered `/projects` sequence follows the approved priority order through Valorant Quant Research. It contains 13 entries because Graph Kernel SVM remains evidence-gated.
+- MatchStream is absent from the homepage and is the first archive-only project on `/projects`.
+- Long project titles wrap without clipping; archive rows retain their established visual language and mobile stacking.
+- The wide archive-row grid was made flexible at the `xl` breakpoint after QA found and then eliminated a 95px overflow at 1440px.
+- The homepage renders one project visual, the existing CUDA architecture diagram. The MatchStream asset remains untouched but is not rendered in its archive row.
+- The résumé link remains `/documents/resume.pdf`, and the PDF was not modified.
+
+### Claims and links
+
+- Every rendered project repository and documentation URL returned HTTP 200 during QA.
+- BlockScope's public `v0.1.0` annotated tag and GitHub-recognized MIT license were verified. GitHub reports no formal release, and the repository README/changelog still contain contradictory no-license wording. The site therefore calls the work a `v0.1.0` alpha and makes no license or open-source claim.
+- BlockScope copy preserves the small/nonrepresentative corpus boundary and does not claim confirmed attacks, intent, wallet loss, realized profit, or production deployment.
+- Causal Uplift leads with methodology and synthetic measured lift; promotion remains on hold pending real randomized validation.
+- Matching Engine's 14× figure is tied to one WSL2/ext4 host, 16 clients, and the same-run cap-1 control.
+- LLM Posttraining states that tiny fixtures and one-step SFT/DPO validate infrastructure rather than model-quality improvement.
+- Graph Kernel SVM is retained in structured data with nonquantitative copy and `portfolioVisible: false`. Its public repository still lacks the generated reports supporting the previously shown macro-F1 values.
+- Scanpy PR #4364 was open and unmerged during QA and is not represented on the site.

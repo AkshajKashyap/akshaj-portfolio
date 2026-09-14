@@ -1,6 +1,6 @@
 # Asset Checklist
 
-The portfolio ships the verified résumé plus two purposeful featured-project visuals. No stock imagery or generic AI artwork is used.
+The portfolio ships the verified résumé plus one purposeful rendered project visual. No stock imagery or generic AI artwork is used.
 
 | Asset | Required before launch | Expected location / format | Status |
 | --- | --- | --- | --- |
@@ -12,7 +12,7 @@ The portfolio ships the verified résumé plus two purposeful featured-project v
 | Live demo URLs | When a public demo exists | Exact HTTPS links | Missing/unverified |
 | Documentation URLs | When separate from repository | Exact URLs | Present where verified; absent links are omitted |
 | CUDA architecture visual | Required for this update | `public/images/projects/cuda-transformer-runtime-architecture.svg`, 16:9 | Present |
-| MatchStream dashboard crop | Required for this update | `public/images/projects/matchstream-dashboard.png`, approximately 16:9 | Present; derived from the verified repository screenshot |
+| MatchStream dashboard crop | Retained but not rendered | `public/images/projects/matchstream-dashboard.png`, approximately 16:9 | Present; MatchStream is now an archive row and the file is left unchanged |
 | Charts/evaluation figures | Only when they add verified evidence | Export with readable labels and documented data context | Missing/unverified |
 | Profile image decision | No | Intentionally omit; do not add a placeholder portrait | Omitted |
 | Open Graph image | Recommended | `public/og.png` or Next metadata-generated image; 1200×630px | Deferred: no verified production domain for stable social-image URLs |

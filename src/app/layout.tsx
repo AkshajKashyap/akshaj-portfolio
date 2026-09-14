@@ -16,10 +16,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Akshaj Kashyap — Machine Learning & Software Engineering",
+    default: "Akshaj Kashyap | Machine Learning & Software Engineering",
     template: "%s | Akshaj Kashyap",
   },
-  description: "Akshaj Kashyap is a UC Santa Barbara computer science student building machine-learning systems across rigorous experimentation, GPU inference, and reliable software infrastructure.",
+  description: "Akshaj Kashyap is a UC Santa Barbara computer science student building machine-learning and software systems across rigorous experimentation, efficient inference, and reliable infrastructure.",
   robots: {
     index: true,
     follow: true,

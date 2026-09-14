@@ -9,7 +9,9 @@ export type ProjectCategory =
   | "ML Research"
   | "Distributed Software Systems"
   | "Software Engineering"
-  | "Software Systems";
+  | "Software Systems"
+  | "Blockchain Systems · Execution Research"
+  | "Spatial Data Science · Research";
 
 export type HomepagePlacement = "lead" | "major" | "standard" | "additional";
 
@@ -36,4 +38,5 @@ export interface Project {
   documentationLabel?: string;
   result?: string;
   visual?: ProjectVisual;
+  portfolioVisible?: boolean;
 }

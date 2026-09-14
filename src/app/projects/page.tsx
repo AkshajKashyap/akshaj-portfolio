@@ -4,24 +4,20 @@ import { FeaturedProjectStory } from "@/components/featured-project-story";
 import { ProjectArchiveRow } from "@/components/project-archive-row";
 import { Section } from "@/components/section";
 import { SectionHeading } from "@/components/section-heading";
-import { projects } from "@/data/projects";
-import type { ArchiveGroup } from "@/types/project";
+import { publishedProjects } from "@/data/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Selected work in causal and graph machine learning, CUDA inference, ML systems, and reliable software infrastructure, with source code and measured evidence.",
+  description: "Selected work in GPU inference, causal and graph machine learning, execution analysis, data research, and reliable software systems, with source code and measured evidence.",
 };
 
 const featuredPlacements = new Set(["lead", "major", "standard"]);
-const featuredProjects = projects.filter(
+const featuredProjects = publishedProjects.filter(
   (project) => project.homepagePlacement && featuredPlacements.has(project.homepagePlacement),
 );
-
-const archiveSections: { group: ArchiveGroup; title: string }[] = [
-  { group: "machine-learning", title: "Machine learning and applied modeling" },
-  { group: "ml-systems", title: "ML systems and evaluation" },
-  { group: "software-systems", title: "Software systems" },
-];
+const archiveProjects = publishedProjects.filter(
+  (project) => !featuredPlacements.has(project.homepagePlacement ?? ""),
+);
 
 export default function ProjectsPage() {
   return (
@@ -64,25 +60,12 @@ export default function ProjectsPage() {
       <Section className="border-y border-border bg-surface-subtle">
         <div className="grid gap-8 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-4">
-            <SectionHeading eyebrow="Full archive" title="More project work" description="Projects grouped by the kind of problem they address." />
+            <SectionHeading eyebrow="Full archive" title="More project work" description="Additional work across software systems, machine learning, and applied research." />
           </div>
-          <div className="space-y-12 lg:col-span-8">
-            {archiveSections.map((section) => {
-              const sectionProjects = projects.filter(
-                (project) => project.archiveGroup === section.group && !featuredPlacements.has(project.homepagePlacement ?? ""),
-              );
-
-              return (
-                <section key={section.group} aria-labelledby={`${section.group}-heading`}>
-                  <h2 id={`${section.group}-heading`} className="font-editorial border-b border-border pb-4 text-2xl font-semibold tracking-[-0.02em] text-text-strong sm:text-3xl">
-                    {section.title}
-                  </h2>
-                  {sectionProjects.map((project) => (
-                    <ProjectArchiveRow key={project.slug} project={project} />
-                  ))}
-                </section>
-              );
-            })}
+          <div className="lg:col-span-8">
+            {archiveProjects.map((project) => (
+              <ProjectArchiveRow key={project.slug} project={project} />
+            ))}
           </div>
         </div>
       </Section>

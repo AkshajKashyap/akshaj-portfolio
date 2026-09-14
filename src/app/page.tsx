@@ -7,13 +7,13 @@ import { Section } from "@/components/section";
 import { SectionHeading } from "@/components/section-heading";
 import { experience } from "@/data/experience";
 import { profile } from "@/data/profile";
-import { projects } from "@/data/projects";
+import { publishedProjects } from "@/data/projects";
 import { skillGroups } from "@/data/skills";
 
-const leadProject = projects.find((project) => project.homepagePlacement === "lead");
-const majorProject = projects.find((project) => project.homepagePlacement === "major");
-const standardProjects = projects.filter((project) => project.homepagePlacement === "standard");
-const additionalProjects = projects.filter((project) => project.homepagePlacement === "additional");
+const leadProject = publishedProjects.find((project) => project.homepagePlacement === "lead");
+const majorProject = publishedProjects.find((project) => project.homepagePlacement === "major");
+const standardProjects = publishedProjects.filter((project) => project.homepagePlacement === "standard");
+const additionalProjects = publishedProjects.filter((project) => project.homepagePlacement === "additional");
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
           </div>
           <div className="border-t border-accent pt-5 lg:col-span-5">
             <p className="max-w-xl text-lg leading-8 text-text">
-              I build machine-learning systems that connect rigorous experiments with model inference and reliable software. The projects emphasize evaluation, performance, and failure behavior—not just model outputs.
+              I build machine-learning and software systems that connect rigorous experiments with efficient inference and reliable software. The projects emphasize evaluation, performance, and failure behavior, not just whether a system works on the happy path.
             </p>
             <p className="mt-5 font-mono text-[10px] font-medium leading-5 tracking-[0.08em] text-text-muted">
               Causal inference · Graph learning · GPU inference · Reliable systems
@@ -80,7 +80,7 @@ export default function Home() {
 
       <Section className="border-y border-border bg-surface-subtle">
         <div className="border-b-[3px] border-accent pb-5">
-          <SectionHeading eyebrow="More work" title="Additional projects" description="Four more projects spanning applied machine learning, research, and software systems." />
+          <SectionHeading eyebrow="More work" title="Additional projects" description="Four more projects spanning ML systems, applied machine learning, research, and software systems." />
         </div>
         <div className="mt-3">
           {additionalProjects.map((project) => (
@@ -108,7 +108,7 @@ export default function Home() {
             <SectionHeading eyebrow="About" title="Clear systems, clearly explained." />
             <div className="mt-6 max-w-2xl space-y-5 text-base leading-8 text-text">
               <p>
-                Akshaj Kashyap is pursuing a B.S. in Computer Science at UC Santa Barbara, expected June 2028. His work is centered on machine learning and the engineering questions around it: how experiments are designed, how inference runs, how performance is measured, and how systems behave when assumptions fail.
+                Akshaj Kashyap is pursuing a B.S. in Computer Science at UC Santa Barbara, expected June 2028. His work spans machine learning and software systems, with a focus on how experiments are designed, how models and systems execute, how performance is measured, and what happens when assumptions fail.
               </p>
               <p>
                 In the PLAXCO Lab, he works with electrochemical data and reusable analysis tools for biosensor experiments. Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes his approach: organize complex information, distinguish evidence from assertion, and explain technical decisions clearly.

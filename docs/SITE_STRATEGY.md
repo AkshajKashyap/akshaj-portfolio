@@ -2,7 +2,7 @@
 
 ## Positioning
 
-Akshaj Kashyap is a UCSB computer science student presenting as an AI/ML-oriented software engineer with depth across rigorous modeling, inference, performance, and reliable software systems. The site makes that work inspectable through clear problem statements, implementation choices, measured evidence, and direct source links.
+Akshaj Kashyap is a UCSB computer science student presenting as an AI/ML-oriented software engineer with depth across rigorous modeling, inference, performance, and reliable software and execution systems. The site makes that work inspectable through clear problem statements, implementation choices, measured evidence, and direct source links.
 
 ## Audiences and their goals
 
@@ -23,7 +23,7 @@ Akshaj Kashyap is a UCSB computer science student presenting as an AI/ML-oriente
 
 ## Ten-second message
 
-“Akshaj Kashyap builds machine-learning systems that connect rigorous experiments with model inference and reliable software.”
+“Akshaj Kashyap builds machine-learning and software systems that connect rigorous experiments with efficient inference and reliable execution.”
 
 ## Lasting impression
 
@@ -31,7 +31,8 @@ The visitor should remember a technically grounded candidate whose strongest pro
 
 ## Emphasize
 
-- Four verified featured projects in a deliberate hierarchy: CUDA Transformer Runtime, Causal Uplift Experimentation Ops, Molecular GNN Property Ops, and MatchStream.
+- Four verified featured projects in a deliberate hierarchy: CUDA Transformer Runtime, Causal Uplift Experimentation, Molecular Property Prediction with GNNs, and BlockScope.
+- Four complementary homepage-additional projects: C++ Matching Engine, Gridiron Spatial Intelligence, Plant Disease Classification, and LLM Posttraining Ops.
 - Problem → build → technical decision → evidence/result on every strong project.
 - Direct GitHub, demo, documentation, resume, and contact paths where available.
 - Clear role-relevant breadth across ML, data, research, and software engineering.
@@ -61,5 +62,5 @@ The visitor should remember a technically grounded candidate whose strongest pro
 | Metrics lack context | Pair each metric with dataset, baseline, split, timeframe, and evaluation method where applicable. |
 | Overclaiming deployment or research impact | Use precise labels and link primary evidence. |
 | Too many shallow projects dilute the best work | Feature only projects meeting the selection rubric; archive or exclude the rest. |
-| Screenshots are decorative or unreadable | Use only the two purposeful, verified featured-project visuals selected for CUDA and MatchStream. |
+| Screenshots are decorative or unreadable | Use only the verified CUDA architecture visual on the homepage; do not invent imagery for BlockScope. |
 | Contact/resume links fail | Validate all public links and PDF download before launch. |

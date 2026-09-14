@@ -1,26 +1,28 @@
 # Content Source Inventory
 
-Project claims were checked against local repositories and their tracked READMEs, reports, model cards, benchmark notes, or verification artifacts. Public links use verified repository destinations; Agent Reliability Bench remains listed from its local source but has no public action because its GitHub destination is not publicly reachable.
+Project claims were checked against local repositories and their tracked READMEs, reports, model cards, benchmark notes, release metadata, or verification artifacts. Public links use verified repository destinations.
 
-| Project | Placement | Primary evidence used | Confidence / limitation |
-| --- | --- | --- | --- |
-| CUDA Transformer Runtime | Lead | README, architecture and benchmark docs, CTest output | High; local RTX 3050 benchmark, not production serving |
-| Causal Uplift Experimentation Ops | Major | README, portfolio review, policy and trial reports | High; prospective trial and business values are synthetic |
-| Molecular GNN Property Ops | Standard | README, model card, evaluation docs | High; three-seed ESOL scaffold-split result |
-| MatchStream | Standard | README, system design, benchmark notes, dashboard capture | High; complete-stack replay and throughput are local |
-| C++ Matching Engine | Homepage additional | README, reliability and performance docs | High; evidence is repository test-suite scope |
-| Plant Disease VisionOps | Homepage additional | Final report, model card, corruption reports | High; clean performance does not establish field readiness |
-| Valorant Quant Research | Homepage additional | Research and robustness reports | High; small 2024 advantage later found unstable |
-| HDFS Log Anomaly Detection | Homepage additional | Local README/artifacts plus verified resume claim | Medium-high; scale claims only, no precision/recall claim |
-| Graph Kernel SVM | Archive | README and repeated-split reports | High; dataset-specific macro-F1 results |
-| Credit Risk GBDT | Archive | README, methodology docs, test suite | High; threshold and test-count claims only |
-| LLM Posttraining Ops | Archive | README and release verification | High; model-dependent stages were skipped |
-| Multimodal Retrieval Ops | Archive | README, model/evaluation docs | High; tracked Flickr8k result, no deployment claim |
-| Feed Ranking Ops | Archive | README and tracked evaluation reports | High; chronological holdout context retained |
-| Contextual Bandit Decision Ops | Archive | README and release report | High; synthetic evidence leaves promotion on hold |
-| Feature Store Monitoring Ops | Archive | README and portfolio workflow report | High; result uses synthetic demand data |
-| Agent Reliability Bench | Archive | Local README and task contracts | Medium-high; infrastructure/task validation, not model performance; public link omitted |
+The structured inventory contains the approved 14 projects. Thirteen currently render because Graph Kernel SVM remains hidden behind a public-evidence gate.
 
-Movie Recommender is omitted because no source repository was verified. No public demo link is rendered without a verified destination.
+| Order | Project | Placement | Primary evidence used | Confidence / limitation |
+| ---: | --- | --- | --- | --- |
+| 1 | CUDA Transformer Runtime | Lead | README, architecture and benchmark docs, CTest output | High; local RTX 3050 benchmark, not production serving |
+| 2 | Causal Uplift Experimentation | Major | README, `docs/portfolio_review.md`, policy and prospective-trial reports | High; +4.36 percentage-point lift is synthetic and promotion remains on hold |
+| 3 | Molecular Property Prediction with GNNs | Standard | README, model card, evaluation docs | High; three-seed ESOL scaffold-split result |
+| 4 | BlockScope | Standard | README, `CHANGELOG.md`, `artifacts/evaluation_17000001_17000008.json`, local test output, `v0.1.0` tag | High for the bounded alpha corpus; eight blocks are nonrepresentative and no intent, wallet-loss, profit, or production claim is made |
+| 5 | C++ Matching Engine | Homepage additional | README and `docs/network_performance.md` | High for one WSL2/ext4 host and same-run cap-1 comparison; not a universal deployment benchmark |
+| 6 | Gridiron Spatial Intelligence | Homepage additional | README, `docs/EVALUATION_METHODOLOGY.md`, release report and evidence manifest | High for aggregate evidence; restricted NFL data require separate authorization for full reproduction |
+| 7 | Plant Disease Classification | Homepage additional | Final report, model card, corruption reports | High; clean performance does not establish field readiness |
+| 8 | LLM Posttraining Ops | Homepage additional | README and `reports/portfolio/release_0.1.0.md` | High for infrastructure wiring; tiny fixtures and one-step training do not establish model improvement |
+| 9 | MatchStream | Archive only | README, system design, benchmark and reliability reports | High; complete-stack replay and throughput are local |
+| 10 | Multimodal Retrieval | Archive only | README, model and evaluation docs | High; tracked Flickr8k result, no deployment claim |
+| 11 | Feed Ranking Ops | Archive only | README and tracked evaluation reports | High; chronological holdout context retained |
+| 12 | Contextual Bandit Decision Ops | Archive only | README and release report | High; synthetic evidence leaves promotion on hold |
+| 13 | Valorant Quant Research | Archive only | Research and robustness reports | High; small 2024 advantage later found unstable |
+| 14 | Graph Kernel SVM | Hidden pending evidence | Public `reports/method_notes.md`; repository and CI configuration | Insufficient for numeric publication; public repository lacks the cited generated experiment reports |
+
+HDFS Log Anomaly Detection, Credit Risk GBDT, Feature Store Monitoring Ops, and Agent Reliability Bench are no longer part of rendered portfolio data. Their repositories and historical documentation remain unchanged.
+
+Movie Recommender remains omitted because no source repository was verified. No public demo link is rendered without a verified destination.
 
 Personal identity, education, experience, contact, and résumé facts continue to use the verified résumé source described in `PERSONAL_CONTENT_VERIFICATION.md`.
