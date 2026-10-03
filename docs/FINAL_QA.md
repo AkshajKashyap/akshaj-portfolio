@@ -82,3 +82,11 @@ This section records the approved content and hierarchy refresh without replacin
 - LLM Posttraining states that tiny fixtures and one-step SFT/DPO validate infrastructure rather than model-quality improvement.
 - Graph Kernel SVM is retained in structured data with nonquantitative copy and `portfolioVisible: false`. Its public repository still lacks the generated reports supporting the previously shown macro-F1 values.
 - Scanpy PR #4364 was open and unmerged during QA and is not represented on the site.
+
+## Recruiting-positioning QA, October 2, 2026
+
+- `npm run lint`, `npm run build`, and `git diff --check` passed.
+- The production server returned HTTP 200 for `/`, `/projects`, and `/documents/resume.pdf`.
+- Rendered HTML contained the second-year identity line, Summer 2027 availability, ERSP admission, expected June 2028 B.S. completion, and corrected PLAXCO wording.
+- The résumé URL remains `/documents/resume.pdf`; the served PDF matched the checked-in file byte-for-byte, and the PDF was not modified.
+- Desktop and mobile visual inspection could not be completed because no browser executable or browser automation package was available in the workspace. The production build and static rendering completed successfully.

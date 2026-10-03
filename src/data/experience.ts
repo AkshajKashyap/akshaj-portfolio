@@ -16,8 +16,8 @@ export const experience: Experience[] = [
     dates: "Aug. 2025 – Present",
     location: "Santa Barbara, CA",
     details: [
-      "Processed 44 electrochemical datasets with Python, converting potentiostat outputs into concentration metrics and plots.",
-      "Refactored SACMES into reusable analysis code for electrochemical biosensor experiments.",
+      "Processed 44 electrochemical exports spanning 11 datasets, two electrodes, and two methods with Python, converting potentiostat outputs into concentration metrics and plots.",
+      "Continuing to refactor SACMES into reusable analysis code for electrochemical biosensor experiments.",
     ],
     technologies: ["Python"],
   },

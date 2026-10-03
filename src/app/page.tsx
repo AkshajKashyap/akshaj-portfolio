@@ -26,7 +26,10 @@ export default function Home() {
             </h1>
           </div>
           <div className="border-t border-accent pt-5 lg:col-span-5">
-            <p className="max-w-xl text-lg leading-8 text-text">
+            <p className="max-w-xl text-sm font-semibold leading-6 text-text-strong sm:text-base">
+              Second-year Computer Science undergraduate at UC Santa Barbara.
+            </p>
+            <p className="mt-3 max-w-xl text-lg leading-8 text-text">
               I build machine-learning and software systems that connect rigorous experiments with efficient inference and reliable software. The projects emphasize evaluation, performance, and failure behavior, not just whether a system works on the happy path.
             </p>
             <p className="mt-5 font-mono text-[10px] font-medium leading-5 tracking-[0.08em] text-text-muted">
@@ -108,10 +111,10 @@ export default function Home() {
             <SectionHeading eyebrow="About" title="Clear systems, clearly explained." />
             <div className="mt-6 max-w-2xl space-y-5 text-base leading-8 text-text">
               <p>
-                Akshaj Kashyap is pursuing a B.S. in Computer Science at UC Santa Barbara, expected June 2028. His work spans machine learning and software systems, with a focus on how experiments are designed, how models and systems execute, how performance is measured, and what happens when assumptions fail.
+                Akshaj Kashyap is a second-year Computer Science undergraduate at UC Santa Barbara, with expected B.S. completion in June 2028. His work spans machine learning and software systems, with a focus on how experiments are designed, how models and systems execute, how performance is measured, and what happens when assumptions fail.
               </p>
               <p>
-                In the PLAXCO Lab, he works with electrochemical data and reusable analysis tools for biosensor experiments. Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes his approach: organize complex information, distinguish evidence from assertion, and explain technical decisions clearly.
+                He was admitted to UCSB&apos;s Early Research Scholars Program (ERSP) for 2026–27. In the PLAXCO Lab, he works with electrochemical data and reusable analysis tools for biosensor experiments. Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes his approach: organize complex information, distinguish evidence from assertion, and explain technical decisions clearly.
               </p>
             </div>
           </div>
@@ -141,7 +144,7 @@ export default function Home() {
               Continue the conversation.
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-7 text-text">
-              For research, software, and applied machine-learning opportunities, reach out by email or connect through LinkedIn and GitHub.
+              Available for Summer 2027 software engineering and machine-learning internships; also interested in research opportunities. Reach out by email or connect through LinkedIn and GitHub.
             </p>
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-3 text-sm lg:col-span-4 lg:justify-end">

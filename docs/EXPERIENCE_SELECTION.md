@@ -6,7 +6,7 @@ The homepage uses four entries from the verified resume source, `/home/akshaj/Ca
 
 | Resume entry | Homepage decision | Why | Website wording condensed from resume |
 | --- | --- | --- | --- |
-| PLAXCO Lab — Undergraduate Researcher, Aug. 2025–Present | Selected | Directly supports research, Python data analysis, and biosensor-experiment work. | The two resume clauses are split into a dataset-processing responsibility and a SACMES refactoring responsibility. |
+| PLAXCO Lab — Undergraduate Researcher, Aug. 2025–Present | Selected | Directly supports research, Python data analysis, and biosensor-experiment work. | Corrected personal context distinguishes 44 exports spanning 11 datasets, two electrodes, and two methods; SACMES refactoring is described as ongoing. |
 | Techions — Technology Intern, May 2024–Aug. 2024 | Selected | Strong applied computer-vision evidence with a concrete, resume-supported outcome. | The resume bullet is split into pipeline scope and the 27% detection-accuracy outcome. |
 | Handshake AI Fellowship — AI Evaluation Fellow, Jan. 2026–Present | Selected | Demonstrates structured AI-model evaluation and written justification work. | The evaluation count and assessment focus are retained in concise sentences. |
 | PromptShop — Software / Prompt Engineering Contributor, Jan. 2026–Present | Selected | Adds software/prompt workflow iteration and structured testing evidence. | The workflow count and 30+ test cases are retained; wording is shortened for scanning. |

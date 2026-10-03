@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: "Akshaj Kashyap | Machine Learning & Software Engineering",
     template: "%s | Akshaj Kashyap",
   },
-  description: "Akshaj Kashyap is a UC Santa Barbara computer science student building machine-learning and software systems across rigorous experimentation, efficient inference, and reliable infrastructure.",
+  description: "Akshaj Kashyap is a second-year Computer Science undergraduate at UC Santa Barbara building machine-learning and software systems across rigorous experimentation, efficient inference, and reliable infrastructure.",
   robots: {
     index: true,
     follow: true,

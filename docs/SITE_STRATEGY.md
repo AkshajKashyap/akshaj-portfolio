@@ -2,7 +2,7 @@
 
 ## Positioning
 
-Akshaj Kashyap is a UCSB computer science student presenting as an AI/ML-oriented software engineer with depth across rigorous modeling, inference, performance, and reliable software and execution systems. The site makes that work inspectable through clear problem statements, implementation choices, measured evidence, and direct source links.
+Akshaj Kashyap is a second-year Computer Science undergraduate at UC Santa Barbara presenting as an AI/ML-oriented software engineer with depth across rigorous modeling, inference, performance, and reliable software and execution systems. He is available for Summer 2027 software engineering and machine-learning internships and remains interested in research opportunities. The site makes his work inspectable through clear problem statements, implementation choices, measured evidence, and direct source links.
 
 ## Audiences and their goals
 
@@ -17,6 +17,7 @@ Akshaj Kashyap is a UCSB computer science student presenting as an AI/ML-oriente
 ## Website goals
 
 - Establish technical credibility in a first scan and enable deeper verification.
+- Make Akshaj's current academic stage and Summer 2027 availability clear without weakening the project-led presentation.
 - Route visitors to featured project evidence, the full project inventory, resume, and contact details.
 - Represent the breadth of software engineering and ML work without claiming depth that is not documented.
 - Work cleanly on mobile and remain maintainable as project data is added.
