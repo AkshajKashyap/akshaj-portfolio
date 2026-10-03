@@ -10,6 +10,17 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
+    organization: "Sherwood Lab, UC Santa Barbara",
+    role: "Undergraduate Researcher",
+    kind: "Research",
+    dates: "Oct. 2026 – Present",
+    location: "Santa Barbara, CA",
+    details: [
+      "Project scope: Active GPU Memory and Interconnect.",
+      "Research focus: GPU memory hierarchies and interconnects for AI workloads, advised by Professor Tim Sherwood.",
+    ],
+  },
+  {
     organization: "PLAXCO Lab",
     role: "Undergraduate Researcher",
     kind: "Research",

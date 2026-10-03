@@ -2,10 +2,11 @@
 
 ## Selection approach
 
-The homepage uses four entries from the verified resume source, `/home/akshaj/Career/resume/current.tex`. They balance research data analysis, applied computer vision, AI evaluation, and workflow-oriented software work without reproducing the entire resume.
+The homepage uses five verified experience entries. Sherwood and the refreshed résumé are grounded in `/home/akshaj/Career/resume/current.pdf`; existing entries retain their previously documented sources. Together they balance systems research, research data analysis, applied computer vision, AI evaluation, and workflow-oriented software work without reproducing the entire résumé.
 
 | Resume entry | Homepage decision | Why | Website wording condensed from resume |
 | --- | --- | --- | --- |
+| Sherwood Lab, UC Santa Barbara — Undergraduate Researcher, Oct. 2026–Present | Selected first | Establishes the current Active GPU Memory and Interconnect research affiliation and advisor. | Separates the named project scope from the research focus; makes no completed-contribution, result, publication, or Accel-Sim claim. |
 | PLAXCO Lab — Undergraduate Researcher, Aug. 2025–Present | Selected | Directly supports research, Python data analysis, and biosensor-experiment work. | Corrected personal context distinguishes 44 exports spanning 11 datasets, two electrodes, and two methods; SACMES refactoring is described as ongoing. |
 | Techions — Technology Intern, May 2024–Aug. 2024 | Selected | Strong applied computer-vision evidence with a concrete, resume-supported outcome. | The resume bullet is split into pipeline scope and the 27% detection-accuracy outcome. |
 | Handshake AI Fellowship — AI Evaluation Fellow, Jan. 2026–Present | Selected | Demonstrates structured AI-model evaluation and written justification work. | The evaluation count and assessment focus are retained in concise sentences. |
@@ -15,4 +16,4 @@ The homepage uses four entries from the verified resume source, `/home/akshaj/Ca
 
 ## Scope note
 
-The omission of the two leadership entries is a prioritization decision for the homepage, not a judgment about their value. They remain available in the verified resume.
+The omission of the two leadership entries is a prioritization decision for the homepage, not a judgment about their value. They remain available in the verified résumé.

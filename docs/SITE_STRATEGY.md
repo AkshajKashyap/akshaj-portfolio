@@ -2,7 +2,7 @@
 
 ## Positioning
 
-Akshaj Kashyap is a second-year Computer Science undergraduate at UC Santa Barbara presenting as an AI/ML-oriented software engineer with depth across rigorous modeling, inference, performance, and reliable software and execution systems. He is available for Summer 2027 software engineering and machine-learning internships and remains interested in research opportunities. The site makes his work inspectable through clear problem statements, implementation choices, measured evidence, and direct source links.
+Akshaj Kashyap is a second-year Computer Science undergraduate at UC Santa Barbara presenting as an AI/ML-oriented software engineer with depth across rigorous modeling, inference, performance, and reliable software and execution systems. His current Sherwood Lab research focuses on GPU memory hierarchies and interconnects for AI workloads. He is available for Summer 2027 software engineering and machine-learning internships and remains interested in research opportunities. The site makes his work inspectable through clear problem statements, implementation choices, measured evidence, and direct source links.
 
 ## Audiences and their goals
 
@@ -37,6 +37,7 @@ The visitor should remember a technically grounded candidate whose strongest pro
 - Problem → build → technical decision → evidence/result on every strong project.
 - Direct GitHub, demo, documentation, resume, and contact paths where available.
 - Clear role-relevant breadth across ML, data, research, and software engineering.
+- Current Sherwood Lab affiliation and Active GPU Memory and Interconnect scope, without implying completed GPU experiments, implementations, results, publications, or simulator proficiency.
 - Honest scope labels: prototype, coursework, independent project, research work, or deployed product (only after verification).
 
 ## Intentionally omit

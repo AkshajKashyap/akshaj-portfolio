@@ -1,6 +1,6 @@
 # Personal Content Verification
 
-Source priority was applied as follows: confirmed personal context supplied October 2, 2026, governs the academic-stage, Summer 2027 availability, ERSP, and corrected PLAXCO claims in this update. `/home/akshaj/Career/resume/current.tex` remains the source for identity, education, links, other experience, and skills; the matching PDF is used only for resume delivery validation. Repository sources remain the basis for project-specific claims.
+Source priority was applied as follows: confirmed personal context supplied October 3, 2026, and `/home/akshaj/Career/resume/current.pdf` govern the Sherwood Lab affiliation, project scope, dates, location, research focus, advisor, and refreshed public résumé. Confirmed personal context supplied October 2, 2026, continues to govern academic stage, Summer 2027 availability, graduate-study boundaries, and corrected PLAXCO claims. `/home/akshaj/Career/resume/current.tex` remains a supporting source for identity, education, links, other experience, and skills. Repository sources remain the basis for project-specific claims.
 
 | Claim | Website location | Source file | Status | Wording transformation |
 | --- | --- | --- | --- | --- |
@@ -8,7 +8,9 @@ Source priority was applied as follows: confirmed personal context supplied Octo
 | Second-year Computer Science undergraduate at UC Santa Barbara | Hero, About, metadata | Confirmed personal context; `current.tex` education entry | Verified | Uses academic stage rather than an unsupported official class-standing label. |
 | B.S. Computer Science, expected June 2028 | About | Confirmed personal context; `current.tex` education entry | Verified | Presented as “expected B.S. completion in June 2028.” |
 | Available for Summer 2027 software engineering and machine-learning internships; retains research interest | Contact | Confirmed personal context | Verified | Appears once as a concise availability statement. |
-| Admitted to UCSB Early Research Scholars Program for 2026–27 | About | Confirmed personal context | Verified | States admission only; does not claim an assigned project, mentor, contribution, or result. |
+| Sherwood Lab, UC Santa Barbara; Undergraduate Researcher; Active GPU Memory and Interconnect; Oct. 2026–Present; Santa Barbara, CA | Experience, About | Confirmed personal context; `current.pdf` Sherwood entry | Verified | Public copy separates the active project scope from completed contributions. |
+| GPU memory hierarchies and interconnects for AI workloads, advised by Professor Tim Sherwood | Experience, About | Confirmed personal context; `current.pdf` Sherwood entry | Verified | States research focus and advisor without claiming experiments, implementations, results, publications, or simulator proficiency. |
+| ERSP placement into Sherwood Lab | Internal provenance only | Confirmed personal context | Verified | ERSP is retained as the source of the placement but is not needed in public copy. |
 | AI/ML-oriented engineering focus spanning experimentation, inference, performance, and reliable systems | Hero, About, Contact, metadata | `current.tex` projects/experience/skills; verified project inventory | Verified synthesis | Condenses supported work areas; does not claim a current job title or that every project is deployed. |
 | PLAXCO Lab role, date, location, 44 exports spanning 11 datasets, two electrodes, and two methods, and ongoing SACMES refactoring | Experience | Confirmed personal context; `current.tex` PLAXCO Lab entry | Verified with correction | Distinguishes exports from independent datasets and describes the refactoring as ongoing. |
 | Techions role, date, location, CV pipeline, and 27% accuracy improvement | Experience | `current.tex` Techions entry | Verified | One resume bullet becomes two scan-friendly sentences. |
@@ -17,12 +19,12 @@ Source priority was applied as follows: confirmed personal context supplied Octo
 | Email: `akshajkashyap@gmail.com` | Contact, footer | `current.tex` heading | Verified | Used as a `mailto:` destination; not repeated as plain text in every location. |
 | LinkedIn: `linkedin.com/in/akshajkashyap` | Contact, footer | `current.tex` heading | Verified | Uses the explicit HTTPS destination from the resume. |
 | GitHub: `github.com/AkshajKashyap` | Contact, footer | `current.tex` heading; audited Git remotes | Verified | Uses the explicit HTTPS destination. |
-| Resume path: `/documents/resume.pdf` | Header, hero, Contact | `current.pdf`, copied byte-for-byte to `public/documents/resume.pdf` | Verified | Link label is “View résumé” or “Résumé” and opens in a new tab. |
+| Resume path: `/documents/resume.pdf` | Header, hero, Contact | `/home/akshaj/Career/resume/current.pdf`, copied byte-for-byte to `public/documents/resume.pdf` | Verified | The public URL is unchanged; link labels remain “View résumé” or “Résumé” and open in a new tab. |
 
 ## Deliberate omissions
 
 - GPA, coursework, phone number, and leadership details are verified but omitted from the homepage to keep the identity layer concise.
 - No personal location, graduation claim beyond the expected date, or employer claim beyond the selected experience entries is added.
 - Graduate study remains an intention and is not presented as an enrolled degree or confirmed timeline.
-- ERSP copy does not claim an assigned project, mentor, technical contribution, or research result.
+- Sherwood copy describes current affiliation, project scope, research focus, and advisor only. It does not claim completed GPU experiments, cache-policy implementations, performance improvements, publications, or Accel-Sim proficiency.
 - No profile image, Open Graph image, or new favicon is claimed because no approved asset source was found.

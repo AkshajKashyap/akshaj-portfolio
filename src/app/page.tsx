@@ -97,7 +97,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Experience"
             title="Research and technical work"
-            description="Selected work across research data analysis, applied computer vision, AI evaluation, and reliable software workflows."
+            description="Selected work across systems research, research data analysis, applied computer vision, AI evaluation, and reliable software workflows."
           />
         </div>
         <div className="mt-7 grid gap-x-10 md:grid-cols-2">
@@ -114,7 +114,7 @@ export default function Home() {
                 Akshaj Kashyap is a second-year Computer Science undergraduate at UC Santa Barbara, with expected B.S. completion in June 2028. His work spans machine learning and software systems, with a focus on how experiments are designed, how models and systems execute, how performance is measured, and what happens when assumptions fail.
               </p>
               <p>
-                He was admitted to UCSB&apos;s Early Research Scholars Program (ERSP) for 2026–27. In the PLAXCO Lab, he works with electrochemical data and reusable analysis tools for biosensor experiments. Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes his approach: organize complex information, distinguish evidence from assertion, and explain technical decisions clearly.
+                Akshaj is an undergraduate researcher in the Sherwood Lab at UC Santa Barbara, advised by Professor Tim Sherwood. His Active GPU Memory and Interconnect project focuses on GPU memory hierarchies and interconnects for AI workloads. In the PLAXCO Lab, he works with electrochemical data and reusable analysis tools for biosensor experiments. Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes his approach: organize complex information, distinguish evidence from assertion, and explain technical decisions clearly.
               </p>
             </div>
           </div>

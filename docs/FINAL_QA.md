@@ -90,3 +90,12 @@ This section records the approved content and hierarchy refresh without replacin
 - Rendered HTML contained the second-year identity line, Summer 2027 availability, ERSP admission, expected June 2028 B.S. completion, and corrected PLAXCO wording.
 - The résumé URL remains `/documents/resume.pdf`; the served PDF matched the checked-in file byte-for-byte, and the PDF was not modified.
 - Desktop and mobile visual inspection could not be completed because no browser executable or browser automation package was available in the workspace. The production build and static rendering completed successfully.
+
+## Sherwood affiliation and résumé refresh QA, October 3, 2026
+
+- `npm run lint`, `npm run build`, and `git diff --check` passed.
+- The production server returned HTTP 200 for `/`, `/projects`, and `/documents/resume.pdf`.
+- Rendered HTML placed Sherwood Lab first in Experience and contained the approved organization, role, project scope, dates, location, research focus, and advisor wording without completed-contribution or result claims.
+- The project archive retained the established featured-project hierarchy.
+- `/home/akshaj/Career/resume/current.pdf`, `public/documents/resume.pdf`, and the PDF served from `/documents/resume.pdf` matched byte-for-byte with SHA-256 `464934e51e61f7d3890b8dad975bc3efe14147ebe47aa97e03d389f96b1b5197`.
+- Desktop and mobile visual inspection could not be completed because no browser executable or browser automation package was available in the workspace. The production build and static rendering completed successfully.
