@@ -33,14 +33,13 @@ export const experience: Experience[] = [
     technologies: ["Python"],
   },
   {
-    organization: "Techions",
+    organization: "Stealth Startup",
     role: "Technology Intern",
     kind: "Internship",
-    dates: "May 2024 – Aug. 2024",
+    dates: "June 2026 – Sept. 2026",
     location: "San Jose, CA",
     details: [
-      "Built a computer-vision pipeline to detect vegetation near cellular infrastructure.",
-      "Improved detection accuracy by 27% for vegetation-risk screening related to wildfire prevention and network reliability.",
+      "Built a Python computer vision pipeline with Roboflow, Segment Anything, and depth estimation to detect vegetation near cellular infrastructure for wildfire-risk screening.",
     ],
     technologies: ["Python", "Roboflow", "Depth Estimation", "Segment Anything"],
   },
