@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { profile } from "@/data/profile";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,10 +17,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Akshaj Kashyap | Machine Learning & Software Engineering",
+    default: profile.title,
     template: "%s | Akshaj Kashyap",
   },
-  description: "Akshaj Kashyap is a second-year Computer Science undergraduate at UC Santa Barbara building machine-learning and software systems across rigorous experimentation, efficient inference, and reliable infrastructure.",
+  metadataBase: new URL(profile.siteUrl),
+  description: profile.description,
+  openGraph: {
+    type: "website",
+    siteName: "Akshaj Kashyap",
+    title: profile.title,
+    description: profile.description,
+  },
   robots: {
     index: true,
     follow: true,

@@ -10,17 +10,6 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    organization: "Sherwood Lab, UC Santa Barbara",
-    role: "Undergraduate Researcher",
-    kind: "Research",
-    dates: "Oct. 2026 – Present",
-    location: "Santa Barbara, CA",
-    details: [
-      "Project scope: Active GPU Memory and Interconnect.",
-      "Research focus: GPU memory hierarchies and interconnects for AI workloads, advised by Professor Tim Sherwood.",
-    ],
-  },
-  {
     organization: "PLAXCO Lab",
     role: "Undergraduate Researcher",
     kind: "Research",
@@ -28,9 +17,22 @@ export const experience: Experience[] = [
     location: "Santa Barbara, CA",
     details: [
       "Processed 44 electrochemical exports spanning 11 datasets, two electrodes, and two methods with Python, converting potentiostat outputs into concentration metrics and plots.",
-      "Continuing to refactor SACMES into reusable analysis code for electrochemical biosensor experiments.",
+      "Developing Python scientific computing and modeling workflows; investigating one- and two-compartment concentration models.",
+      "Contributing to ongoing SACMES refactoring: reduced its main Python module from 5,268 to 4,834 lines and passed 8 executed regression comparisons, with additional cases skipped.",
     ],
     technologies: ["Python"],
+  },
+  {
+    organization: "Sherwood Lab, UC Santa Barbara",
+    role: "Undergraduate Researcher",
+    kind: "Research",
+    dates: "Sept. 2026 – Present",
+    location: "Santa Barbara, CA",
+    details: [
+      "Project scope: Active GPU Memory and Interconnect.",
+      "Research focus: GPU memory hierarchies and interconnects for AI workloads, advised by Professor Tim Sherwood.",
+      "Beginning investigation of GPU cache behavior and memory-access patterns using Hebrides, Barra, and Accel-Sim 2.0.",
+    ],
   },
   {
     organization: "Stealth Startup",
@@ -50,7 +52,7 @@ export const experience: Experience[] = [
     dates: "Jan. 2026 – Present",
     location: "Remote",
     details: [
-      "Completed 20+ rubric-based evaluations of AI-generated image edits, assessing realism and coherence.",
+      "Completed 200+ rubric-based evaluations of AI-generated image edits, assessing realism and coherence.",
       "Wrote structured justifications to support consistent model-quality assessments.",
     ],
   },

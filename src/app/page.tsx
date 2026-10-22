@@ -22,18 +22,18 @@ export default function Home() {
         <div className="grid gap-6 sm:gap-8 lg:grid-cols-12 lg:items-start lg:gap-12">
           <div className="lg:col-span-7">
             <h1 className="font-editorial max-w-4xl text-balance text-[46px] font-semibold leading-[0.98] tracking-[-0.035em] text-text-strong sm:text-[58px] lg:text-[68px]">
-              Building models is only half the work.
+              Software, systems, and scientific computing.
             </h1>
           </div>
           <div className="border-t border-accent pt-5 lg:col-span-5">
             <p className="max-w-xl text-sm font-semibold leading-6 text-text-strong sm:text-base">
-              Second-year Computer Science undergraduate at UC Santa Barbara.
+              B.S. Computer Science, University of California, Santa Barbara · Expected June 2028.
             </p>
             <p className="mt-3 max-w-xl text-lg leading-8 text-text">
-              I build machine-learning and software systems that connect rigorous experiments with efficient inference and reliable software. The projects emphasize evaluation, performance, and failure behavior, not just whether a system works on the happy path.
+              I build backend systems, GPU software, and scientific computing tools. The projects emphasize evaluation, performance, and failure behavior, not just whether a system works on the happy path.
             </p>
             <p className="mt-5 font-mono text-[10px] font-medium leading-5 tracking-[0.08em] text-text-muted">
-              Causal inference · Graph learning · GPU inference · Reliable systems
+              Backend systems · Infrastructure · GPU computing · Research engineering
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <ButtonLink href="/#work">
@@ -111,10 +111,10 @@ export default function Home() {
             <SectionHeading eyebrow="About" title="Clear systems, clearly explained." />
             <div className="mt-6 max-w-2xl space-y-5 text-base leading-8 text-text">
               <p>
-                Akshaj Kashyap is a second-year Computer Science undergraduate at UC Santa Barbara, with expected B.S. completion in June 2028. His work spans machine learning and software systems, with a focus on how experiments are designed, how models and systems execute, how performance is measured, and what happens when assumptions fail.
+                Akshaj Kashyap is pursuing a B.S. Computer Science at the University of California, Santa Barbara, with expected graduation in June 2028. His work spans software engineering, backend systems, GPU computing, and scientific software, with a focus on how experiments are designed, how models and systems execute, how performance is measured, and what happens when assumptions fail.
               </p>
               <p>
-                Akshaj is an undergraduate researcher in the Sherwood Lab at UC Santa Barbara, advised by Professor Tim Sherwood. His Active GPU Memory and Interconnect project focuses on GPU memory hierarchies and interconnects for AI workloads. In the PLAXCO Lab, he works with electrochemical data and reusable analysis tools for biosensor experiments. Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes his approach: organize complex information, distinguish evidence from assertion, and explain technical decisions clearly.
+                In the PLAXCO Lab, Akshaj develops Python scientific computing workflows, investigates concentration models, and contributes to ongoing SACMES refactoring. He is also an undergraduate researcher in the Sherwood Lab, advised by Professor Tim Sherwood. His early-stage Active GPU Memory and Interconnect research concerns GPU memory hierarchies and interconnects for AI workloads. Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes his approach: organize complex information, distinguish evidence from assertion, and explain technical decisions clearly.
               </p>
             </div>
           </div>
@@ -144,7 +144,7 @@ export default function Home() {
               Continue the conversation.
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-7 text-text">
-              Available for Summer 2027 software engineering and machine-learning internships; also interested in research opportunities. Reach out by email or connect through LinkedIn and GitHub.
+              Seeking Summer 2027 software engineering internships, academic-year or part-time engineering work, and off-cycle opportunities, including research engineering. Reach out by email or connect through LinkedIn and GitHub.
             </p>
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-3 text-sm lg:col-span-4 lg:justify-end">

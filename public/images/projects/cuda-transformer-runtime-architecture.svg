@@ -68,6 +68,6 @@
   <line x1="72" x2="1528" y1="724" y2="724" stroke="#b8b2a5" stroke-width="3"/>
   <text x="72" y="774" class="metric-label">CORRECTNESS</text>
   <text x="72" y="822" class="metric">Max CPU/CUDA logit error: 2.563×10⁻⁵</text>
-  <text x="900" y="774" class="metric-label">RTX 3050 LAPTOP GPU</text>
+  <text x="900" y="774" class="metric-label" style="font-size: 18px; letter-spacing: 1px">RTX 3050 LAPTOP GPU · FP32 stories15M</text>
   <text x="900" y="822" class="metric">64-token continuation: ~266.8 tokens/s</text>
 </svg>

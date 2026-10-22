@@ -12,7 +12,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/AkshajKashyap/cuda-transformer-runtime",
     documentationUrl: "https://github.com/AkshajKashyap/cuda-transformer-runtime/tree/main/docs",
     documentationLabel: "Architecture & benchmarks",
-    result: "21/21 CTest tests passed, with maximum CPU/CUDA logit error of 2.563×10⁻⁵. A 64-token continuation ran at approximately 266.8 tokens/s on an RTX 3050 Laptop GPU.",
+    result: "21/21 CTest tests passed, with maximum CPU/CUDA logit error of 2.563×10⁻⁵. A 64-token continuation using the FP32 stories15M (15M-parameter) model ran at approximately 266.8 tokens/s on an RTX 3050 Laptop GPU.",
     visual: {
       src: "/images/projects/cuda-transformer-runtime-architecture.svg",
       alt: "Diagram of the CUDA Transformer Runtime from BPE tokenization through KV-cached decoder layers and greedy generation, with correctness and RTX 3050 performance callouts.",

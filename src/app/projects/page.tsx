@@ -9,6 +9,10 @@ import { publishedProjects } from "@/data/projects";
 export const metadata: Metadata = {
   title: "Projects",
   description: "Selected work in GPU inference, causal and graph machine learning, execution analysis, data research, and reliable software systems, with source code and measured evidence.",
+  openGraph: {
+    title: "Projects | Akshaj Kashyap",
+    description: "Software systems, GPU inference, machine learning, and research projects with source code and measured evidence.",
+  },
 };
 
 const featuredPlacements = new Set(["lead", "major", "standard"]);
