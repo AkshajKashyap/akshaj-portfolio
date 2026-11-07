@@ -5,6 +5,7 @@ import type { Project } from "@/types/project";
 type FeaturedProjectStoryProps = {
   project: Project;
   prominence?: "lead" | "major" | "standard";
+  layout?: "stacked" | "split" | "split-wide";
   className?: string;
 };
 
@@ -29,13 +30,26 @@ const prominenceStyles = {
   },
 } as const;
 
-export function FeaturedProjectStory({ project, prominence = "standard", className = "" }: FeaturedProjectStoryProps) {
+const layoutStyles = {
+  stacked: { article: "", image: "" },
+  split: {
+    article: "md:grid md:grid-cols-2 md:gap-x-8",
+    image: "md:mb-0 md:self-start",
+  },
+  "split-wide": {
+    article: "xl:grid xl:grid-cols-2 xl:gap-x-8",
+    image: "xl:mb-0 xl:self-start",
+  },
+} as const;
+
+export function FeaturedProjectStory({ project, prominence = "standard", layout = "stacked", className = "" }: FeaturedProjectStoryProps) {
   const styles = prominenceStyles[prominence];
+  const arrangement = layoutStyles[layout];
 
   return (
-    <article className={`${styles.article} ${className}`}>
+    <article className={`${styles.article} ${arrangement.article} ${className}`}>
       {project.visual ? (
-        <div className="relative mb-5 aspect-video overflow-hidden border border-border bg-surface">
+        <div className={`relative mb-5 aspect-video overflow-hidden border border-border bg-surface ${arrangement.image}`}>
           <Image
             src={project.visual.src}
             alt={project.visual.alt}
@@ -47,37 +61,39 @@ export function FeaturedProjectStory({ project, prominence = "standard", classNa
         </div>
       ) : null}
 
-      <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-accent">{project.category}</p>
-      <h3 className={`font-editorial mt-3 font-semibold leading-[1.02] tracking-[-0.025em] text-text-strong ${styles.title}`}>
-        {project.title}
-      </h3>
-      <p className={`mt-4 leading-7 text-text ${styles.summary}`}>{project.summary}</p>
+      <div>
+        <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-accent">{project.category}</p>
+        <h3 className={`font-editorial mt-3 font-semibold leading-[1.02] tracking-[-0.025em] text-text-strong ${styles.title}`}>
+          {project.title}
+        </h3>
+        <p className={`mt-4 leading-7 text-text ${styles.summary}`}>{project.summary}</p>
 
-      {project.result ? (
-        <div className="mt-5 border-l-[3px] border-accent bg-accent-subtle px-4 py-3">
-          <p className="font-mono text-[9px] font-semibold uppercase tracking-[0.18em] text-accent">Key result</p>
-          <p className="mt-1.5 text-sm leading-6 text-text-strong">{project.result}</p>
+        {project.result ? (
+          <div className="mt-5 border-l-[3px] border-accent bg-accent-subtle px-4 py-3">
+            <p className="font-mono text-[9px] font-semibold uppercase tracking-[0.18em] text-accent">Key result</p>
+            <p className="mt-1.5 text-sm leading-6 text-text-strong">{project.result}</p>
+          </div>
+        ) : null}
+
+        {project.technologies.length > 0 ? (
+          <p className="mt-5 font-mono text-[10px] leading-5 text-text-muted" aria-label={`${project.title} technologies`}>
+            {project.technologies.join(" · ")}
+          </p>
+        ) : null}
+
+        <div className="mt-5 flex flex-wrap gap-x-5 gap-y-3 text-sm">
+          {project.githubUrl ? (
+            <ExternalLink href={project.githubUrl} className="group no-underline">
+              Source <span aria-hidden="true" className="inline-block transition-transform duration-150 group-hover:translate-x-0.5">→</span>
+            </ExternalLink>
+          ) : null}
+          {project.demoUrl ? <ExternalLink href={project.demoUrl}>Demo</ExternalLink> : null}
+          {project.documentationUrl ? (
+            <ExternalLink href={project.documentationUrl} variant="secondary" className="no-underline">
+              {project.documentationLabel ?? "Documentation"}
+            </ExternalLink>
+          ) : null}
         </div>
-      ) : null}
-
-      {project.technologies.length > 0 ? (
-        <p className="mt-5 font-mono text-[10px] leading-5 text-text-muted" aria-label={`${project.title} technologies`}>
-          {project.technologies.join(" · ")}
-        </p>
-      ) : null}
-
-      <div className="mt-5 flex flex-wrap gap-x-5 gap-y-3 text-sm">
-        {project.githubUrl ? (
-          <ExternalLink href={project.githubUrl} className="group no-underline">
-            Source <span aria-hidden="true" className="inline-block transition-transform duration-150 group-hover:translate-x-0.5">→</span>
-          </ExternalLink>
-        ) : null}
-        {project.demoUrl ? <ExternalLink href={project.demoUrl}>Demo</ExternalLink> : null}
-        {project.documentationUrl ? (
-          <ExternalLink href={project.documentationUrl} variant="secondary" className="no-underline">
-            {project.documentationLabel ?? "Documentation"}
-          </ExternalLink>
-        ) : null}
       </div>
     </article>
   );

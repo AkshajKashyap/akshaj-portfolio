@@ -56,7 +56,13 @@ export default function ProjectsPage() {
         ) : null}
         <div className="mt-10 grid gap-8 border-t border-border pt-8 md:grid-cols-2 xl:grid-cols-3">
           {featuredProjects.slice(1).map((project, index) => (
-            <FeaturedProjectStory key={project.slug} project={project} prominence={index === 0 ? "major" : "standard"} />
+            <FeaturedProjectStory
+              key={project.slug}
+              project={project}
+              prominence={index === 0 ? "major" : "standard"}
+              layout={project.slug === "matchstream" ? "split-wide" : "stacked"}
+              className={project.slug === "matchstream" ? "xl:col-span-3" : ""}
+            />
           ))}
         </div>
       </Section>

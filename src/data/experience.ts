@@ -30,7 +30,7 @@ export const experience: Experience[] = [
     location: "Santa Barbara, CA",
     details: [
       "Configured and ran Accel-Sim 2.0 on UCSB's ARM64 research server, reproducing a V100 Pathfinder baseline at 28,717 simulated GPU cycles.",
-      "Analyzed NVIDIA V100 and H200 execution traces to investigate warp execution, memory-access patterns, and cache behavior; connected V100 boundary effects to the benchmark's CUDA source.",
+      "Began analyzing NVIDIA V100 and H200 GPU execution traces, studying instruction execution, memory-access patterns, and cache behavior; quantitative evaluation remains ongoing.",
       "Current team direction: investigate L2-cache behavior for AI workloads. L2-disabled baselines, associativity sweeps, and streaming-load bypass are proposed experiments, not completed optimizations.",
     ],
     technologies: ["Accel-Sim 2.0", "CUDA", "GPU Architecture", "Linux"],

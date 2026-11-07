@@ -76,7 +76,13 @@ export default function Home() {
 
         <div className="mt-10 grid gap-10 border-t border-border pt-8 md:grid-cols-2 md:gap-8">
           {standardProjects.map((project) => (
-            <FeaturedProjectStory key={project.slug} project={project} prominence="standard" />
+            <FeaturedProjectStory
+              key={project.slug}
+              project={project}
+              prominence="standard"
+              layout={project.slug === "matchstream" ? "split" : "stacked"}
+              className={project.slug === "matchstream" ? "md:col-span-2" : ""}
+            />
           ))}
         </div>
       </Section>
@@ -114,7 +120,7 @@ export default function Home() {
                 Akshaj Kashyap is pursuing a B.S. Computer Science at the University of California, Santa Barbara, with expected graduation in June 2028. His work spans software engineering, backend systems, GPU computing, and scientific software, with a focus on how experiments are designed, how models and systems execute, how performance is measured, and what happens when assumptions fail.
               </p>
               <p>
-                In the PLAXCO Lab, Akshaj develops Python/SciPy compartment-fitting workflows for biosensor data and contributes to ongoing SACMES refactoring. He also researches GPU memory architecture in Professor Tim Sherwood's lab, using Accel-Sim 2.0 and NVIDIA V100/H200 execution traces to investigate L2-cache behavior for AI workloads. Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes his approach: organize complex information, distinguish evidence from assertion, and explain technical decisions clearly.
+                In the PLAXCO Lab, Akshaj develops Python/SciPy compartment-fitting workflows for biosensor data and contributes to ongoing SACMES refactoring. He also researches GPU memory architecture in Professor Tim Sherwood&apos;s lab, using Accel-Sim 2.0 and NVIDIA V100/H200 execution traces to investigate L2-cache behavior for AI workloads. Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes his approach: organize complex information, distinguish evidence from assertion, and explain technical decisions clearly.
               </p>
             </div>
           </div>
