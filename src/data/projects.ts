@@ -114,9 +114,10 @@ export const projects: Project[] = [
   {
     slug: "matchstream",
     title: "MatchStream",
-    summary: "A live-replay platform that turns historical football events into durable match state and a real-time dashboard. Redpanda carries ordered events while a deterministic projector manages PostgreSQL state, retries, DLQ handling, recovery, HTTP APIs, and WebSocket updates.",
+    summary: "An event-driven backend that replays historical football events through Redpanda/Kafka and a transactional PostgreSQL projector. It handles per-match ordering, idempotent event processing, broker/database failures, retries, and HTTP/WebSocket state recovery.",
     category: "Distributed Software Systems",
     technologies: ["Python", "Redpanda/Kafka", "PostgreSQL", "FastAPI", "React"],
+    homepagePlacement: "standard",
     archiveGroup: "software-systems",
     githubUrl: "https://github.com/AkshajKashyap/matchstream",
     documentationUrl: "https://github.com/AkshajKashyap/matchstream/blob/main/docs/system-design.md",
