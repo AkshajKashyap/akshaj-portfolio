@@ -14,7 +14,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "Inference and performance",
-    skills: ["CUDA", "cuBLAS", "transformer inference", "CMake", "benchmarking", "profiling"],
+    skills: ["CUDA", "cuBLAS", "Accel-Sim 2.0", "transformer inference", "CMake", "benchmarking", "profiling"],
   },
   {
     title: "Software and systems",
