@@ -114,7 +114,7 @@ export default function Home() {
                 Akshaj Kashyap is pursuing a B.S. Computer Science at the University of California, Santa Barbara, with expected graduation in June 2028. His work spans software engineering, backend systems, GPU computing, and scientific software, with a focus on how experiments are designed, how models and systems execute, how performance is measured, and what happens when assumptions fail.
               </p>
               <p>
-                In the PLAXCO Lab, Akshaj develops Python scientific computing workflows, investigates concentration models, and contributes to ongoing SACMES refactoring. He is also an undergraduate researcher in the Sherwood Lab, advised by Professor Tim Sherwood. His early-stage Active GPU Memory and Interconnect research concerns GPU memory hierarchies and interconnects for AI workloads. Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes his approach: organize complex information, distinguish evidence from assertion, and explain technical decisions clearly.
+                In the PLAXCO Lab, Akshaj develops Python scientific computing workflows, investigates concentration models, and contributes to ongoing SACMES refactoring. He also researches GPU memory architecture in Professor Tim Sherwood's lab, using Accel-Sim 2.0 and NVIDIA V100/H200 execution traces to investigate L2-cache behavior for AI workloads. Before much of his technical work, he served as editor-in-chief of his high-school newspaper. That experience still shapes his approach: organize complex information, distinguish evidence from assertion, and explain technical decisions clearly.
               </p>
             </div>
           </div>
