@@ -20,7 +20,7 @@ export const experience: Experience[] = [
       "Built injection-aware two-compartment fitting with Python/SciPy, multistart optimization, and optional nonnegative fitted initial states; 7 of 11 experiments have exploratory fits, while 4 remain excluded for unresolved source, timing, or label issues.",
       "Contributing to ongoing SACMES refactoring: reduced its main Python module from 5,268 to 4,834 lines and passed 8 executed regression comparisons, with additional cases skipped.",
     ],
-    technologies: ["Python"],
+    technologies: ["Python", "NumPy", "pandas", "SciPy"],
   },
   {
     organization: "Sherwood Lab, UC Santa Barbara",
