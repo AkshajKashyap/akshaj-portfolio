@@ -29,10 +29,11 @@ export const experience: Experience[] = [
     dates: "Sept. 2026 – Present",
     location: "Santa Barbara, CA",
     details: [
-      "Project scope: Active GPU Memory and Interconnect.",
-      "Research focus: GPU memory hierarchies and interconnects for AI workloads, advised by Professor Tim Sherwood.",
-      "Beginning investigation of GPU cache behavior and memory-access patterns using Hebrides, Barra, and Accel-Sim 2.0.",
+      "Configured and ran Accel-Sim 2.0 on UCSB's ARM64 research server, reproducing a V100 Pathfinder baseline at 28,717 simulated GPU cycles.",
+      "Analyzed NVIDIA V100 and H200 execution traces to investigate warp execution, memory-access patterns, and cache behavior; connected V100 boundary effects to the benchmark's CUDA source.",
+      "Current team direction: investigate L2-cache behavior for AI workloads. L2-disabled baselines, associativity sweeps, and streaming-load bypass are proposed experiments, not completed optimizations.",
     ],
+    technologies: ["Accel-Sim 2.0", "CUDA", "GPU Architecture", "Linux"],
   },
   {
     organization: "Stealth Startup",
