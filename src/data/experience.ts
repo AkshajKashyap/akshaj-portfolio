@@ -29,11 +29,12 @@ export const experience: Experience[] = [
     dates: "Sept. 2026 – Present",
     location: "Santa Barbara, CA",
     details: [
-      "Configured and ran Accel-Sim 2.0 on UCSB's ARM64 research server, reproducing a V100 Pathfinder baseline at 28,717 simulated GPU cycles.",
-      "Began analyzing NVIDIA V100 and H200 GPU execution traces, studying instruction execution, memory-access patterns, and cache behavior; quantitative evaluation remains ongoing.",
-      "Current team direction: investigate L2-cache behavior for AI workloads. L2-disabled baselines, associativity sweeps, and streaming-load bypass are proposed experiments, not completed optimizations.",
+      "Investigating GPU L2-cache behavior in H200 GEMM workloads to inform selective allocation bypass: deciding which memory requests should allocate cache space.",
+      "Built C++ instrumentation in Accel-Sim and Python analysis tools to reconstruct cache-line lifetimes, track sector reuse, and count evictions. Added synthetic trace tests and checks that reconcile request and read-hit counts with simulator statistics.",
+      "Automated reproducible H200 simulation runs with recorded simulator versions, configurations, and binary and trace hashes. The analysis separates immediate read hits from requests that arrive while a cache fill is pending.",
+      "Currently investigating selective L2 allocation policies using the measured cache behavior, with ongoing work focused on broader workload evaluation and understanding which memory accesses benefit from caching.",
     ],
-    technologies: ["Accel-Sim 2.0", "CUDA", "GPU Architecture", "Linux"],
+    technologies: ["C++", "Python", "Accel-Sim 2.0", "GPU Architecture", "Linux"],
   },
   {
     organization: "Stealth Startup",
